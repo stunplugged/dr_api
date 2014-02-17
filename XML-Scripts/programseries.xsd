@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:annotation>
 		<xs:documentation xml:lang="en">
 			Test of XML documents
@@ -8,46 +7,36 @@
 	</xs:annotation>
 
 
-	
+	<xs:element name="ArrayOfProgramSerie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProgramSerie" maxOccurs="unbounded" type="ProgramSerieType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 
-	<xs:element name="ProgramSerie" type="ProgramSerieType" />
 
 
-
+	<!-- definition of complex elements -->
 	<xs:complexType name="ProgramSerieType">
 	 <xs:sequence>
-	 	<xs:element name="Slug" 			type="xsd:string" />
-	 	<xs:element name="Titel" 			type="xsd:string" />
-	 	<xs:element name="Description" 		type="xsd:string" />
-	 	<xs:element name="NewestVideoId"	type="xsd:decimal" />
-	 	<xs:element name="NewestVideoPublishTime" type="xsd:dateTime" />
-	 	<xs:element name="VideoCount"		type="xsd:decimal" />
-	 	<xs:element name="Labels"			type="xsd:LabelsType" />
+	 	<xs:element name="Slug" 			type="xs:string" />
+	 	<xs:element name="Title" 			type="xs:string" />
+	 	<xs:element name="Description" 		type="xs:string" />
+	 	<xs:element name="ShortName" 		type="xs:string" minOccurs="0" maxOccurs="1" />
+	 	<xs:element name="NewestVideoId"	type="xs:nonNegativeInteger" />
+	 	<xs:element name="NewestVideoPublishTime" type="xs:dateTime" />
+	 	<xs:element name="VideoCount"		type="xs:nonNegativeInteger" />
+	 	<xs:element name="Labels"			type="LabelsType" />
+	 	<xs:element name="WebCmsImagePath" type="xs:string" minOccurs="0" maxOccurs="1" />
 	 </xs:sequence>
 	</xs:complexType>
 
 
-
 	<xs:complexType name="LabelsType">
-		<xs:element name="string"	type="xsd:string" />
+	 <xs:sequence>		
+		<xs:element name="string"	type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+	 </xs:sequence>	
 	</xs:complexType>	
-
-
-
-<ArrayOfProgramSerie>
-<ProgramSerie>
- <Slug>
-<Title>
-<Description>	
-<ShortName />
-<NewestVideoId>
-<NewestVideoPublishTime>
-<VideoCount>
-<Labels>
-<string>
-<WebCmsImagePath />
-
-
-
 
 </xs:schema>

@@ -1,0 +1,19 @@
+
+<BroadcastChannel>
+
+<BroadcastTime>
+
+- List of video sizes and bitrates
+- Fulltext search
+- Count of words --> statistic
+- Unique Labels/Slugs
+- List of categories --> List of programs in one kategories
+- Søgninger med tidsinterval (fra til)
+
+
+Stefan: XS-Schema
+http://www.dr.dk/nu/api/programseries.xml
+
+
+Selects--XQuery -->
+Parameter --> Example 
