@@ -1,0 +1,12 @@
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+			Test of XML documents
+		</xs:documentation>
+	</xs:annotation>
+
+
+
+
+</xs:schema>

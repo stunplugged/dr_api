@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+			Test of XML documents
+		</xs:documentation>
+	</xs:annotation>
+
+
+	<xs:element name="ProgramSerie" type="ProgramSerieType" />
+
+
+	<xs:complexType name="ProgramSerieType">
+	 <xs:sequence>
+	 	<xs:element name="Slug" 			type="xsd:string" />
+	 	<xs:element name="Titel" 			type="xsd:string" />
+	 	<xs:element name="Description" 		type="xsd:string" />
+	 	<xs:element name="NewestVideoId"	type="xsd:decimal" />
+	 	<xs:element name="NewestVideoPublishTime" type="xsd:dateTime" />
+	 	<xs:element name="VideoCount"		type="xsd:decimal" />
+	 	<xs:element name="Labels"			type="xsd:LabelsType" />
+	 </xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:complexType name="LabelsType">
+		<xs:element name="string"	type="xsd:string" />
+	</xs:complexType>	
+
+
+
+<ArrayOfProgramSerie>
+<ProgramSerie>
+ <Slug>
+<Title>
+<Description>	
+<ShortName />
+<NewestVideoId>
+<NewestVideoPublishTime>
+<VideoCount>
+<Labels>
+<string>
+<WebCmsImagePath />
+
+
+
+
+</xs:schema>

@@ -1,0 +1,86 @@
+\documentclass[11pt,twoside,a4paper]{report}
+\usepackage{a4}
+\usepackage[ansinew]{inputenc}
+\usepackage[danish]{babel}
+\usepackage{textcomp}
+\usepackage{paralist}		% for: \begin{compactitem}
+\usepackage{subfigure}
+\usepackage{paralist}		% for: \begin{compactitem}
+
+\usepackage{graphicx}
+\usepackage{fancyvrb} %centreret verbatim
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain} %til at lave overskrift på hver side
+%\setlength{\parindent}{0pt} %indrykning ved ny sektion
+\fancyhf{} % delete current header and footer
+\fancyhead[OL]{\leftmark}
+\fancyhead[OR]{\thepage}
+\fancyhead[EL]{\thepage}
+\fancyhead[ER]{\leftmark} %giver overskrift \rightmark giver subsection overskrift
+\fancypagestyle{plain}{%
+\fancyhead{} % get rid of headers on plain pages
+\renewcommand{\headrulewidth}{0pt} % and the line
+}\pagestyle{fancy}
+%opsætning af TOC
+\usepackage{hyperref} %make linkable
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[toc,page]{appendix}
+
+\setcounter{tocdepth}{2} %TOC only covers down to subsections
+\setcounter{secnumdepth}{2} %section er det nederste niveau der tildeles nummer
+
+\newcommand{\fct}[1]{\textit{#1}} %formatering for funktioner
+\newcommand{\tbl}[1]{\textit{#1}} %formatering for tabeller
+\newcommand{\flt}[1]{\emph{#1}} %formatering for felter
+%\newcommand{\cmd}[1]{\textit{#1}} %formatering for entiteter
+%\newcommand{\primkey}[1]{\underline{#1}} %formatering for primary key
+%\newcommand{\schema}[1]{\emph{#1}} %formatering for skema
+
+\title{Geo- og tidsdatabaser\\Tømning af skraldespande i Lemvig Kommune}
+\author{Andreas Falk, Stefan Jaensch, \\Jørgen Bo Arp Ladekjær}
+\date{November 2013 - December 2013}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\chapter{Introduktion}
+\input{text/intro}
+
+\chapter{Data indlæsning}
+%\input{text/data_import}
+
+\chapter{Temporal analyse}
+%\input{text/data_analyse}
+
+\chapter{Heatmapping}
+%\input{text/heatmapping}
+
+\chapter{Analyse af geografiske områder}\label{chapter:geo_area}
+%\input{text/geo_analyse}
+
+\chapter{Analyse af skraldebilers rute}\label{chapter:routing}
+%\input{text/rute_analyse}
+
+\chapter{Konklusion}
+%\input{text/konklusion}
+
+
+\newpage
+\clearpage \thispagestyle{empty}
+\begin{appendix}
+\chapter{Installationsvejledning}
+%\input{text/instalation}
+
+\end{appendix}
+
+\end{document} 
