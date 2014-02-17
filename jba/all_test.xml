@@ -1,0 +1,1424 @@
+<ArrayOfProgramSerieVideo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ProgramSerieVideo>
+    <Id>96334</Id>
+    <Description />
+    <ProgramSerieSlug>tv-avisen-1955</ProgramSerieSlug>
+    <Title>TV AVISEN</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T19:55:00</BroadcastTime>
+    <ExpireTime>2014-02-13T20:00:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4532635&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678480</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96335</Id>
+    <Description>DR1s journalistiske talkshow direkte fra Rådhuspladsen i København.</Description>
+    <ProgramSerieSlug>aftenshowet</ProgramSerieSlug>
+    <Title>Aftenshowet</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T19:05:00</BroadcastTime>
+    <ExpireTime>2014-02-13T19:10:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4532640&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678482</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96332</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>Anoreksiigen.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T14:05:00</BroadcastTime>
+    <ExpireTime>2014-02-13T14:08:11</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531856&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678245</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1129</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96330</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>angstmedgrafik.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T14:03:00</BroadcastTime>
+    <ExpireTime>2014-02-13T14:05:31</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531838&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678239</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1124</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96331</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>anbragt.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T14:03:00</BroadcastTime>
+    <ExpireTime>2014-02-13T14:04:06</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531844&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678241</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1117</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96329</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>ADHD.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T14:00:00</BroadcastTime>
+    <ExpireTime>2014-02-13T14:02:45</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531820&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678233</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1095</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96328</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>aborttilbrug.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T13:57:00</BroadcastTime>
+    <ExpireTime>2014-02-13T13:59:39</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531810&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678230</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1127</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96327</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>voldifamilien.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T13:46:00</BroadcastTime>
+    <ExpireTime>2014-02-13T13:47:54</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531769&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678219</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1135</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96326</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>Vold_i_nattelivet.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T13:44:00</BroadcastTime>
+    <ExpireTime>2014-02-13T13:46:31</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531763&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678217</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1129</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96325</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>Vold.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T13:43:00</BroadcastTime>
+    <ExpireTime>2014-02-13T13:45:09</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531757&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678215</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1119</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96324</Id>
+    <Description>Tværs ekspertvideo</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>Uddannelse.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T13:41:00</BroadcastTime>
+    <ExpireTime>2014-02-13T13:42:32</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531733&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678208</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1123</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96333</Id>
+    <Description />
+    <ProgramSerieSlug>dr2-breaking-news</ProgramSerieSlug>
+    <Title>DR2 Live: Statsministerens spørgetime - direkte fra Folketinget</Title>
+    <Duration />
+    <BroadcastTime>2014-01-14T13:00:00</BroadcastTime>
+    <ExpireTime>2014-02-13T13:05:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4531862&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1678247</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96323</Id>
+    <Description>"Velfærdsturisme" eller "Fri bevægelighed" - de kan ikke engang blive enige om betegnelsen. Morten Messerschmidt (DF) og Morten Helveg Petersen (R) diskuterer i aften. Vært: Martin Krasnik.Læs mere om aftenens program på www.facebook.com/DR2Deadline.</Description>
+    <ProgramSerieSlug>deadline</ProgramSerieSlug>
+    <Title>Deadline</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T22:30:00</BroadcastTime>
+    <ExpireTime>2014-02-12T22:35:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529946&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677644</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96321</Id>
+    <Description />
+    <ProgramSerieSlug>tv-avisen-1955</ProgramSerieSlug>
+    <Title>TV AVISEN</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T19:55:00</BroadcastTime>
+    <ExpireTime>2014-02-12T20:00:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529804&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677593</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96322</Id>
+    <Description>143.000 kg lort lægger danske hunde om dagen! Mød en pædagog og en mor, der er trætte af at tørre hundelort af ungernes sko.Udenlandske læger tilbyder for ofte operationer, hvis du f.eks. kommer til skade på ski. Og det kan blive dig, der betaler - bliv guidet uden om forsikringsfælderne. To fyre vil give danskerne et smil og sætter plastikøjne op i bybilledet. Se, når de pynter Aftenshowets studie. Værter er Maria Yde og Mark Stokholm.</Description>
+    <ProgramSerieSlug>aftenshowet</ProgramSerieSlug>
+    <Title>Aftenshowet</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T19:05:00</BroadcastTime>
+    <ExpireTime>2014-02-12T19:10:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529809&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677595</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96320</Id>
+    <Description />
+    <ProgramSerieSlug>vores-vejr</ProgramSerieSlug>
+    <Title>Vores vejr</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T18:55:00</BroadcastTime>
+    <ExpireTime>2014-02-12T19:00:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529749&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677574</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96319</Id>
+    <Description />
+    <ProgramSerieSlug>tv-avisen-med-sporten</ProgramSerieSlug>
+    <Title>TV AVISEN med Sporten</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T18:30:00</BroadcastTime>
+    <ExpireTime>2014-02-12T18:35:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529712&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677564</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96317</Id>
+    <Description>Skal vi forbyde Hizb ut-Tahrir at holde møder på vores biblioteker?Skal vi forbyde kønsopdelte svømmehaller?Skal vi vende ryggen til moskéer i Danmark?Skal de fremmede have mindre plads? Eller er dansk kultur ingenting uden inspiration fra andre kulturer og religioner?P1 Debattører: Ny kulturborgmester i København Carl Christian Ebbesen (DF) &amp; Henrik Hartmann teaterchef, Betty Nansen Teatret.Vært: Gitte Hansen</Description>
+    <ProgramSerieSlug>p1-debat-paa-dr2</ProgramSerieSlug>
+    <Title>P1 Debat på DR2</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T15:35:00</BroadcastTime>
+    <ExpireTime>3000-01-01T01:00:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529315&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677443</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>90941</Id>
+    <Description>Medvirkende: Jesper Theilgaard, VEJRET@DR.DK</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>DR2 - Vejrudsigten</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T15:07:00</BroadcastTime>
+    <ExpireTime>2014-02-12T15:12:26</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529321&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677445</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96316</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>simone.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T15:16:00</BroadcastTime>
+    <ExpireTime>2014-02-12T15:08:58</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4529004&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677358</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1123</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96313</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>hashogstoffer.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:16:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:19:11</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528524&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677219</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1127</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96315</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>ian.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:19:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:17:35</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528539&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677224</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1122</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96314</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>ian.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:16:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:13:32</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528530&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677221</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1122</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96309</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>hashogstoffer.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:08:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:09:55</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528468&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677200</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1127</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96310</Id>
+    <Description>Medvirkende: Søren Schmidt, LEKTOR, AALBORG UNIVERSITET</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>IRAN - Atomaftale begynder 20. januar</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:02:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:07:46</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528474&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677202</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>690</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96312</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>julie.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:12:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:07:16</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528506&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677212</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1124</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96307</Id>
+    <Description>Medvirkende: Henrik Lerche, DR2 Bjarne Steensbeck, POLITISK ANALYTIKER, DR NYHEDER</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>TOGFONDEN - Aftale ventes i aften</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:00:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:05:34</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528454&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677194</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96308</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>elida.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:07:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:03:20</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528460&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677197</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1127</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96311</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>casper.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:09:00</BroadcastTime>
+    <ExpireTime>2014-02-12T14:01:32</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528480&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677204</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1123</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96303</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>atmiste.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T13:57:00</BroadcastTime>
+    <ExpireTime>2014-02-12T13:59:28</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528426&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677184</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1116</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96306</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>arendse.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:04:00</BroadcastTime>
+    <ExpireTime>2014-02-12T13:57:34</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528448&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677192</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1125</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96304</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>allan.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T14:01:00</BroadcastTime>
+    <ExpireTime>2014-02-12T13:55:51</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528436&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677187</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1126</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96302</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>Afghan1.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T13:52:00</BroadcastTime>
+    <ExpireTime>2014-02-12T13:53:28</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528414&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677177</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1119</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96301</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>ADHD_final-MPEG-4 .mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T13:45:00</BroadcastTime>
+    <ExpireTime>2014-02-12T13:48:09</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528404&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677174</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1115</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96305</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ARBEJDSMARKED - Underbetaling i Søværnet</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T13:03:00</BroadcastTime>
+    <ExpireTime>2014-02-12T13:08:33</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528442&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677189</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>676</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96300</Id>
+    <Description />
+    <ProgramSerieSlug>ultra-live</ProgramSerieSlug>
+    <Title>Spot: Raske Penge laver gode gerninger</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T12:53:00</BroadcastTime>
+    <ExpireTime>2014-02-12T12:53:53</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528351&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677155</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1106</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96297</Id>
+    <Description>Medvirkende: Nils Christian Wang, CHEF, FORSVARSAKADEMIET. Lars Bangert Struwe, FORSKER, CENTER FOR MILITÆRE STUDIER</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>12INDSPARK-VO-AFSMELTNING</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T12:25:00</BroadcastTime>
+    <ExpireTime>2014-02-12T12:30:49</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528258&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677130</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>656</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96298</Id>
+    <Description>Medvirkende: Nick Hækkerup, DAVÆRENDE FORSVARSMINISTER, SOCIALDEMOKRATIET. Kuupik Kleist, DAVÆRENDE LANDSSTYREFORMAND, GRØNLAND. John Kerry, UDENRIGSMINISTER, USA. Vladimir Putin, PRÆSIDENT, RUSLAND Nils Christian Wang, CHEF, FORSVARSAKADEMIET. Lars Bangert Struwe, FORSKER, CENTER FOR MILITÆRE STUDIER</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ARKTIS - Stor dansk forpligtelse</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T12:18:00</BroadcastTime>
+    <ExpireTime>2014-02-12T12:23:09</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528271&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677134</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96296</Id>
+    <Description>Baggrund, analyse og dagens vigtigste nyheder.</Description>
+    <ProgramSerieSlug>dr2-1200</ProgramSerieSlug>
+    <Title>DR2 12.00</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T12:00:00</BroadcastTime>
+    <ExpireTime>2014-02-12T12:05:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528253&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677128</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96295</Id>
+    <Description>Medvirkende: Torben Møller-Hansen, DIREKTØR, FORENINGEN NYDANSKER</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ÆGTESKABSALDER - Indvandrere gifter sig senere</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:03:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:08:36</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527891&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677028</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96294</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>VIKARBUREAUER - Rekordmange henvender sig</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:03:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:08:09</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527886&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677026</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>715</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96292</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ARBEJDSMARKED - Underbetaling i Søværnet</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:02:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:07:40</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527868&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677020</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>659</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96293</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>THAILAND - Kæmpe demonstrationer lige nu</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:02:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:07:04</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527873&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677022</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>720</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96291</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ARBEJDSMARKED - Underbetaling i Søværnet</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:01:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:06:31</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527863&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677018</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>659</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96290</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>IRAN - Atomaftale begynder 20. januar</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:00:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:05:51</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527856&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677015</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>714</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96289</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ISRAEL - Ruster sikkerhed ved ceremoni</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T11:00:00</BroadcastTime>
+    <ExpireTime>2014-02-12T11:05:08</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527851&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677013</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96288</Id>
+    <Description>Tværs</Description>
+    <ProgramSerieSlug>tvaers</ProgramSerieSlug>
+    <Title>alex.mp4</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T10:44:00</BroadcastTime>
+    <ExpireTime>2014-02-12T10:41:23</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527723&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676948</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1127</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96287</Id>
+    <Description>Medvirkende: Rasmus Helveg Petersen, UDVIKLINGSMINISTER, RADIKALE VENSTRE</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>KLIMAINVESTERING FOR MILLIARDER - Private pensionsmidler i brug</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T10:01:00</BroadcastTime>
+    <ExpireTime>2014-02-12T10:06:27</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527557&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676902</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96299</Id>
+    <Description />
+    <ProgramSerieSlug>arvingerne</ProgramSerieSlug>
+    <Title>Arvingerne (4:10) (Synstolkning)</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T12:46:00</BroadcastTime>
+    <ExpireTime>2014-02-12T12:46:47</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4528321&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1677147</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1126</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96285</Id>
+    <Description>Dave Myers og Simon King, der sammen udgør Hairy Bikers, tror fuldt og fast på, at Storbritanniens har de mest fremragende fødevarer og fødevareproducenter. I denne serie, der nok skal drive mundvandet frem, udforsker de landets kulinariske arv og undersøger, hvordan de enkelte retter er blevet til, for bag de måltider, vi spiser, ligger der ofte en fascinerende kulturel, social og økonomisk historie. Deuden tilbereder de i hvert program to lækre hovedretter.</Description>
+    <ProgramSerieSlug>hairy-bikers</ProgramSerieSlug>
+    <Title>Hairy Bikers - det bedste britiske (8)</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T06:30:00</BroadcastTime>
+    <ExpireTime>2014-02-12T06:30:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4527150&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676773</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1124</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96284</Id>
+    <Description>Portræt af den karismatiske brasilianske forfatter, der er tilbedt af sine mange fans, men ofte er blevet udskældt af anmelderne. Paulo Coelho er en af verdens mest succesfulde forfattere. Hans bøger har toppet alverdens bestsellerlister i årevis, er blevet filmatiseret og er blevet læst af mere end 500 millioner læsere i 150 lande. Hans måske mest kendte roman er 'Alkymisten' fra 1988.</Description>
+    <ProgramSerieSlug>paulo-coelho</ProgramSerieSlug>
+    <Title>Paulo Coelho - mit liv</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T01:33:00</BroadcastTime>
+    <ExpireTime>2014-02-12T01:33:39</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>TVK</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526747&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676638</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1127</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96282</Id>
+    <Description>Hvad skal der til for at udrydde mennesket? Er der risiko for, at vi kommer ud for eller selv påfører os en katastrofe så stor, at menneskeheden forsvinder? Det første af to svenske dokumentarprogrammer der viser, at der faktisk er reelle trusler mod vores eksistens. Ikke blot de velkendte trusler som atombomben, klimaforandringer og meteornedslag, men også en række mindre kendte, men mere sandsynlige farer for arten homo sapiens.</Description>
+    <ProgramSerieSlug>menneskehedens-sidste-dage</ProgramSerieSlug>
+    <Title>Menneskehedens sidste dage (1:2)</Title>
+    <Duration />
+    <BroadcastTime>2014-01-13T00:54:00</BroadcastTime>
+    <ExpireTime>2014-02-12T00:54:10</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526663&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676611</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1123</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96281</Id>
+    <Description>Den anerkendte økonom og nobelprismodtager Paul Krugman besøger i aften Deadline. Krugman har gennem hele sin karriere plæderet for offentligt forbrug under økonomiske kriser - det stik modsatte af den førte europæiske finanspolitik. Martin Krasnik spørger, om sparekursen har været helt forfejlet og hvordan et eventuelt angreb fra det ydre rum ville kunne have lavet om på det. Se med i aften.---Først ville de ikke være med. Så ville de gerne. Og nu er de i tvivl igen. Er Dansk Folkeparti ved at springe fra forliget om salget af DONG-aktier til investeringsbanken Goldman Sachs? Og hvorfor har de i så fald skiftet mening? Vi diskuterer i aften investeringen i den statsligt ejede virksomhed med de to (måske) forligsparter Jesper Petersen (S) og Morten Messerschmidt (DF).</Description>
+    <ProgramSerieSlug>deadline</ProgramSerieSlug>
+    <Title>Deadline</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T22:30:00</BroadcastTime>
+    <ExpireTime>2014-02-11T22:35:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526613&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676597</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96280</Id>
+    <Description />
+    <ProgramSerieSlug>sporten</ProgramSerieSlug>
+    <Title>Sporten</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T21:40:00</BroadcastTime>
+    <ExpireTime>2014-02-11T21:45:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526575&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676584</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96279</Id>
+    <Description>Igen i denne uge har en alvorlig politisk sag skabt blæst om de danske embedsmænd. Systemet er over 150 år gammelt. 21Søndag undersøger om det overhovedet er fulgt med tiden. Vært Kåre Quist .</Description>
+    <ProgramSerieSlug>21-soendag</ProgramSerieSlug>
+    <Title>21 Søndag</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T21:00:00</BroadcastTime>
+    <ExpireTime>2014-04-12T21:05:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526566&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676580</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96278</Id>
+    <Description />
+    <ProgramSerieSlug>tv-avisen-med-sporten</ProgramSerieSlug>
+    <Title>TV AVISEN med Sporten og Vejret</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T18:30:00</BroadcastTime>
+    <ExpireTime>2014-02-11T18:35:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526458&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676533</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96277</Id>
+    <Description>Medvirkende: Rasmus Kjeldahl, DIREKTØR, BØRNS VILKÅR</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>TØNDER-SAGEN - Misbrugt pige sagsøger kommune</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T15:01:00</BroadcastTime>
+    <ExpireTime>2014-02-11T15:06:28</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526302&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676481</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96276</Id>
+    <Description>Medvirkende: Allan Sørensen, JOURNALIST, KRISTELIGT DAGBLAD</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ISRAEL - Ariel Sharon begraves mandag</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T14:05:00</BroadcastTime>
+    <ExpireTime>2014-02-11T14:10:47</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526240&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676459</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96275</Id>
+    <Description>Medvirkende: Naser Khader, MELLEMØSTANALYTIKER, HUDSON INSTITUTE</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>SYRIEN - Forhandlinger om fredsmøde</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T14:03:00</BroadcastTime>
+    <ExpireTime>2014-02-11T14:08:51</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526231&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676456</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96272</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ROJ TV - Kurdisk kanal i Højesteret</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T14:03:00</BroadcastTime>
+    <ExpireTime>2014-02-11T14:08:23</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526215&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676449</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>745</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96273</Id>
+    <Description>Medvirkende: Jakob Engel-Schmidt, MF, VENSTRE</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ZORNING-SAGEN - Nye beskyldninger mod minister</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T14:02:00</BroadcastTime>
+    <ExpireTime>2014-02-11T14:07:30</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526221&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676452</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96274</Id>
+    <Description>Medvirkende: Christian Gundtoft, DR2 Rasmus Kjeldahl, DIREKTØR, BØRNS VILKÅR</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>TØNDER-SAGEN - Misbrugt pige sagsøger kommune</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T14:00:00</BroadcastTime>
+    <ExpireTime>2014-02-11T14:05:41</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526226&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676454</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96270</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ISRAEL - Ariel Sharon begraves mandag</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T13:07:00</BroadcastTime>
+    <ExpireTime>2014-02-11T13:12:44</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526146&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676421</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>695</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96271</Id>
+    <Description>Medvirkende: Rasmus Kjeldahl, DIREKTØR, BØRNS VILKÅR Morten Kaus, JOURNALIST. Margrethe Vestager, LEDER, RADIKALE VENSTRE</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>TØNDER-SAGEN - Misbrugt pige sagsøger kommune</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T13:00:00</BroadcastTime>
+    <ExpireTime>2014-02-11T13:05:39</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526184&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676444</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96269</Id>
+    <Description>Medvirkende: Naser Khader, MELLEMØSTANALYTIKER, HUDSON INSTITUTE</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>SYRIEN - Forhandlinger om fredsmøde</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T12:05:00</BroadcastTime>
+    <ExpireTime>2014-02-11T12:10:11</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526034&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676387</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96267</Id>
+    <Description>Medvirkende: Christian Gundtoft, DR2 Jakob Engel-Schmidt, MF, VENSTRE</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>ZORNING-SAGEN - Nye beskyldninger mod minister</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T12:00:00</BroadcastTime>
+    <ExpireTime>2014-02-11T12:05:45</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526017&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676382</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96268</Id>
+    <Description>Baggrund, analyse og dagens vigtigste nyheder.</Description>
+    <ProgramSerieSlug>dr2-1200</ProgramSerieSlug>
+    <Title>DR2 12.00</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T12:00:00</BroadcastTime>
+    <ExpireTime>2014-02-11T12:05:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4526027&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676385</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96266</Id>
+    <Description>Medvirkende: </Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>TØNDER-SAGEN - Misbrugt pige sagsøger kommune</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T11:01:00</BroadcastTime>
+    <ExpireTime>2014-02-11T11:06:22</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525920&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676348</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96257</Id>
+    <Description>Fredrik Skavlan begynder det nye år med besøg af Norges forhenværende statsminister Gro Harlem Brundtland og sønnen Knut, den amerikanske tv-serie-skaber Greg Poehler og den folkekære svenske digter og dramatiker Kristina Lugn.</Description>
+    <ProgramSerieSlug>skavlan</ProgramSerieSlug>
+    <Title>Skavlan (13)</Title>
+    <Duration />
+    <BroadcastTime>2014-01-12T02:25:00</BroadcastTime>
+    <ExpireTime>2014-02-11T02:25:03</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525463&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676211</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1125</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96253</Id>
+    <Description>Efter otte år i koma er Israels tidligere premierminister Ariel Sharon i dag død, 85 år gammel. Det var Sharon, der i sin tid påbegyndte byggeriet af de høje betonmure langs Vestbredden og flere mener, at netop Sharon satte en stopper for fredsmæglingen i Mellemøsten. Vi kigger i aften på "den israelske krigers" eftermæle. Og så kanvi her til aften fortælle, at Carmi Gillon, tidligere chef for den israelske efterretningstjeneste Shin Bet, i morges forlod Danmark, efter han i går blev politianmeldt for tortur af den danske forening Anti Tortur Støtte-fonden (ATSF). DR2 Deadline oplyser, at Gillon siden torsdag har opholdt sig i Danmark, da han i morgen søndag skulle have deltaget i Copenhagen Jewish Filmfestival. Deadline er i besiddelse af et brev, som Carmi Gillon har sendt til filmfestivalen kort efter sin afrejse i morges. Han medvirker selv i en af festivalens film, The Gatekeepers, hvor seks tidligere Shin Bet-chefer udtaler sig om deres arbejde i sikkerhedstjenesten og ikke mindst om fredsforhandlingerne mellem Israel og Palæstina.Gillon var fra 2001-2003 Israels ambassadør i Danmark. Han udtalte i forbindelse med sin udnævnelse til ambassadør, at det til tider kan være acceptabelt og nødvendigt at anvende moderat fysisk pres i forbindelse med afhøringer, hvilket skabte stor røre og også dengang ledte til en politianmeldelse, som dog blev afvist grundet Gillons diplomatiske immunitet.  Deadline fortæller hele historien i aften.Martin Krasnik er vært.</Description>
+    <ProgramSerieSlug>deadline-2230</ProgramSerieSlug>
+    <Title>Deadline</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T22:30:00</BroadcastTime>
+    <ExpireTime>2014-02-10T23:29:04</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525319&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676166</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1125</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96256</Id>
+    <Description>Er der et liv efter pornoen? Hvad der sker for pornostjernerne, når karrieren er slut, og er det overhovedet muligt at leve et almindeligt liv efter en karriere i pornoindustrien? Nogle af de helt store stjerner som bl.a. Mary Carey, Houston, Raylene, Asia Carrera, John Leslie, Randy West og Nina Hartley fortæller her om, hvor de kom fra, før de gik ind i branchen, og hvor de endte, da det hele var overstået.</Description>
+    <ProgramSerieSlug>efter-pornoen</ProgramSerieSlug>
+    <Title>Efter pornoen</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T23:00:00</BroadcastTime>
+    <ExpireTime>2014-02-10T23:05:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525433&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676201</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1126</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96254</Id>
+    <Description>Jazzhuset Montmartre i København var i 1960'erne på niveau med de betydeligste jazzcentre i New York. I de år slog en række af jazzens største musikere sig ned i Danmark: nogle flygtede fra den amerikanske racisme, andre ville ud af narkomiljøet, og alle kom de for at nyde godt af den kunstneriske anerkendelse, som jazzen fik her - samt af de danske piger, som var åbne for mere end deres musikalske begavelse. Det var ret enestående, at man den ene uge kunne opleve en af jazzens grundlæggere, George Lewis, den næste en mainstream-musiker som Stan Getz, og den næste igen en avantgardist som Albert Ayler. For mange, bl.a. en ung Christian Braad Thomsen, var Montmartre en blanding af dagligstue og jazzuniversitet. Han har opstøvet værdifuldt arkivmateriale med Dexter Gordon, Ben Webster, Bud Powell, Stan Getz og Stuff Smith. Desuden har han filmet muntre og vemodige anekdoter fortalt af Montmartres grundlæggere Anders Dyrup og Herluf Kamp Larsen samt af jazzkritikerne Torben Ulrich og Henrik Wolsgaard-Iversen, fotografen Jørgen Bo og musikerne Bo Stief, Alex Riel, John Tchicai, Marilyn Mazur og Jan Kaspersen.</Description>
+    <ProgramSerieSlug>blues-for-montmartre</ProgramSerieSlug>
+    <Title>Blues for Montmartre</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T22:55:00</BroadcastTime>
+    <ExpireTime>2014-02-10T23:00:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>TVK</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525334&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676170</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96252</Id>
+    <Description>Efter otte år i koma er Israels tidligere premierminister Ariel Sharon i dag død, 85 år gammel. Det var Sharon, der i sin tid påbegyndte byggeriet af de høje betonmure langs Vestbredden og flere mener, at netop Sharon satte en stopper for fredsmæglingen i Mellemøsten. Vi kigger i aften på "den israelske krigers" eftermæle. Og så kanvi her til aften fortælle, at Carmi Gillon, tidligere chef for den israelske efterretningstjeneste Shin Bet, i morges forlod Danmark, efter han i går blev politianmeldt for tortur af den danske forening Anti Tortur Støtte-fonden (ATSF). DR2 Deadline oplyser, at Gillon siden torsdag har opholdt sig i Danmark, da han i morgen søndag skulle have deltaget i Copenhagen Jewish Filmfestival. Deadline er i besiddelse af et brev, som Carmi Gillon har sendt til filmfestivalen kort efter sin afrejse i morges. Han medvirker selv i en af festivalens film, The Gatekeepers, hvor seks tidligere Shin Bet-chefer udtaler sig om deres arbejde i sikkerhedstjenesten og ikke mindst om fredsforhandlingerne mellem Israel og Palæstina.Gillon var fra 2001-2003 Israels ambassadør i Danmark. Han udtalte i forbindelse med sin udnævnelse til ambassadør, at det til tider kan være acceptabelt og nødvendigt at anvende moderat fysisk pres i forbindelse med afhøringer, hvilket skabte stor røre og også dengang ledte til en politianmeldelse, som dog blev afvist grundet Gillons diplomatiske immunitet.  Deadline fortæller hele historien i aften.Martin Krasnik er vært.</Description>
+    <ProgramSerieSlug>deadline</ProgramSerieSlug>
+    <Title>Deadline</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T22:30:00</BroadcastTime>
+    <ExpireTime>2014-02-10T22:35:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525287&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676157</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96251</Id>
+    <Description />
+    <ProgramSerieSlug>tv-avisen-1830</ProgramSerieSlug>
+    <Title>TV AVISEN med Sporten og Vejret</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T18:30:00</BroadcastTime>
+    <ExpireTime>2014-02-10T20:32:47</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525198&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676122</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1128</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96250</Id>
+    <Description />
+    <ProgramSerieSlug>tv-avisen-med-sporten</ProgramSerieSlug>
+    <Title>TV AVISEN med Sporten og Vejret</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T18:30:00</BroadcastTime>
+    <ExpireTime>2014-02-10T18:35:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR1</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525142&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676100</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>1424</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96249</Id>
+    <Description>Medvirkende: Holger Bernt Hansen  , PROFESSOR I AFRIKASTUDIER, KØBENHAVNS UNIVERSITET. Niklas Agerup, NØDHJÆLPSARBEJDER, DANSK FLYGTNINGEHJÆLP</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>DEN CENTRALAFRIKANSKE REPUBLIK - Præsident trådt tilbage</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T15:12:00</BroadcastTime>
+    <ExpireTime>2014-02-10T15:17:31</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4525005&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676054</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96247</Id>
+    <Description>Medvirkende: Dennis Kristensen, FORMAND, FOA</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>KOMMUNALE RYGEFORBUD - Rygeforbud kan være ulovlige</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T15:11:00</BroadcastTime>
+    <ExpireTime>2014-02-10T15:16:13</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4524984&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676046</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96248</Id>
+    <Description>Medvirkende: Nadeem Farooq, ARBEJDSMARKEDSORDFØRER, RADIKALE VENSTRE. Finn Sørensen, SOCIALORDFØRER, ENHEDSLISTEN</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>CARSTEN KOCH-UDVALGET: - Ledige skal profileres</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T15:04:00</BroadcastTime>
+    <ExpireTime>2014-02-10T15:09:31</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4524993&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676050</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+  <ProgramSerieVideo>
+    <Id>96246</Id>
+    <Description>Medvirkende: Christian Gundtoft, DR2 Allan Sørensen, JOURNALIST, KRISTELIGT DAGBLAD</Description>
+    <ProgramSerieSlug>update</ProgramSerieSlug>
+    <Title>DØDSFALD - Ariel Sharon afgået ved døden</Title>
+    <Duration />
+    <BroadcastTime>2014-01-11T15:00:00</BroadcastTime>
+    <ExpireTime>2014-02-10T15:05:47</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>Update</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4524967&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=1676041</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>626</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+</ArrayOfProgramSerieVideo>  
