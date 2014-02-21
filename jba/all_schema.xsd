@@ -1,4 +1,5 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
 	<xs:element name="ArrayOfProgramSerieVideo">
 		<xs:complexType>
 			<xs:sequence>
@@ -6,25 +7,26 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+	
 	<xs:element name="ProgramSerieVideo">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="Id" type="xs:integer" />
-				<xs:element name="Description" type="xs:string" />
-				<xs:element name="ProgramSerieSlug" type="xs:string" />
-				<xs:element name="Title" type="xs:string" />
-				<xs:element name="Duration" type="xs:string" />
-				<xs:element name="BroadcastTime" type="xs:string" nillable="true" />
-				<xs:element name="ExpireTime" type="xs:string" />
-				<xs:element name="PublishTime" type="xs:string" />
-				<xs:element name="Expired" type="xs:string" />
-				<xs:element name="BroadcastChannel" type="xs:string" nillable="true" />
-				<xs:element name="VideoManifestUrl" type="xs:string" />
-				<xs:element name="VideoResourceUrl" type="xs:string" />
-				<xs:element name="Premiere" type="xs:string" />
-				<xs:element name="BitrateKbps" type="xs:integer" />
-				<xs:element name="Height" type="xs:integer" />
-				<xs:element name="Width" type="xs:integer" />
+				<xs:element name="Id" 					type="xs:nonNegativeInteger" />
+				<xs:element name="Description" 			type="xs:string" />
+				<xs:element name="ProgramSerieSlug" 	type="xs:string" />
+				<xs:element name="Title" 				type="xs:string" />
+				<xs:element name="Duration" 			type="xs:string" />
+				<xs:element name="BroadcastTime" 		type="xs:dateTime" nillable="true" />
+				<xs:element name="ExpireTime" 			type="xs:dateTime" />
+				<xs:element name="PublishTime" 			type="xs:dateTime" />
+				<xs:element name="Expired" 				type="xs:boolean" />
+				<xs:element name="BroadcastChannel" 	type="xs:string" minOccurs="0" maxOccurs="1" />
+				<xs:element name="VideoManifestUrl" 	type="xs:anyURI" />
+				<xs:element name="VideoResourceUrl" 	type="xs:anyURI" />
+				<xs:element name="Premiere" 			type="xs:boolean" />
+				<xs:element name="BitrateKbps" 			type="xs:nonNegativeInteger" />
+				<xs:element name="Height" 				type="xs:nonNegativeInteger" />
+				<xs:element name="Width" 				type="xs:nonNegativeInteger" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
