@@ -28,7 +28,7 @@
 	 	<xs:element name="NewestVideoPublishTime" type="xs:dateTime" />
 	 	<xs:element name="VideoCount"		type="xs:nonNegativeInteger" />
 	 	<xs:element name="Labels"			type="LabelsType" />
-	 	<xs:element name="WebCmsImagePath" type="xs:string" minOccurs="0" maxOccurs="1" />
+	 	<xs:element name="WebCmsImagePath" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
 	 </xs:sequence>
 	</xs:complexType>
 
