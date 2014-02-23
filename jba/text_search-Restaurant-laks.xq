@@ -1,1 +1,1 @@
-//ArrayOfProgramSerie/ProgramSerie/Labels[string='livsstil']/../Description[text() contains text { 'restaurant', 'laks' } any]/..
+//ArrayOfProgramSerie/ProgramSerie/Labels[string='livsstil']/../Description[ft:contains(text(), ("restaurant", "laks"), { "mode": "any" })]/..
