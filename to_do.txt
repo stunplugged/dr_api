@@ -15,9 +15,19 @@ Stefan: XS-Schema
 http://www.dr.dk/nu/api/programseries.xml
 
 
+
+
 Selects--XQuery -->
 Parameter --> Example 
 
 
 
 http://timc.idv.tw/wordcloud/
+
+- Ide: Compare performance of full text search between postgresql and baseX.
+- Join between documents of different age --> see changes
+- Create fake "Slug" document
+- make Joins between programseries and slug fake document
+- Update: BaseX 7.7.8
+- Create 
+
