@@ -1,7 +1,7 @@
-This mini-project is about creating various backend functions for a video application. These backend functions shall make it possible for the user to navigate and search for specific videos in a large video directory using the BaseX XML database.
+Videoapplikationer som Netflix, Youbio og Viaplay er blevet meget populære i de seneste par år. Dette projekt handler om at skabe nogle de søgefunktioner, som der må være brug for i sådanne videoapplikationer, hvor et stort antal videoer er tilgængelige for brugeren. Disse søgefunktioner skal gøre det muligt for brugeren at navigere rundt i de mange videoer og finde netop det indhold eller den specifikke video, som måtte have interesse for brugeren.  
 
-The XML documents describing all the videos in this video directory is delivered by the Danish national broadcaster Danmarks Radio, who have made their videos available through an open API using XML.
+Som datakilde til dette projekt er der valgt et åbent API (Application Programming Interface) fra Danmarks Radio, som stiller stort set alt deres egenproducerede indhold tilgængeligt for brugeren/programmøren via adressen http://www.dr.dk/nu/api . Dette API giver fx mulighed for at hente en total oversigt over alle tilgængelige videoer, i et enkelt XML dokument, samt hente på detaljer omkring specifikke videoer.
 
-All XML documents used in this project is downloaded from this site: www.dr.dk/nu/api via a standard webbrowser and afterwards loaded into the BaseX XML database for further processing.
+I dette projekt hentes disse XML dokumenter ud via en standard webbrowser og gemmes lokalt, hvorefter de indlæses i en BaseX XML database, hvorfra der vil bliver udarbejdet forskellige søgefunktioner til forespørgsler i XML dokumenterne.
 
-There is no description available for this open API, there for the first task in this project is to study and describe the content and structure of the available XML documents.
+I øjeblikket findes der desværre ingen tilgængelig beskrivelse af struktur eller elementer i de tilgængelige XML dokumenter, så derfor starter projektet med en analyse af netop strukturen eller elementerne i de XML dokumenter som er udvalgt til dette projekt.
