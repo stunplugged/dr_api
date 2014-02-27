@@ -1,7 +1,7 @@
 \documentclass[11pt,twoside,a4paper]{report}
 \usepackage{a4}
 \usepackage[ansinew]{inputenc}
-\usepackage[danish]{babel}
+%\usepackage[danish]{babel}
 \usepackage{textcomp}
 \usepackage{paralist}		% for: \begin{compactitem}
 \usepackage{subfigure}
@@ -44,42 +44,45 @@
 %\newcommand{\primkey}[1]{\underline{#1}} %formatering for primary key
 %\newcommand{\schema}[1]{\emph{#1}} %formatering for skema
 
-\title{Geo- og tidsdatabaser\\Tømning af skraldespande i Lemvig Kommune}
-\author{Andreas Falk, Stefan Jaensch, \\Jørgen Bo Arp Ladekjær}
-\date{November 2013 - December 2013}
+\title{Complex data and logic in the database\\Using XML backend in a video application}
+\author{Stefan Jaensch, Jørgen Bo Arp Ladekjær}
+\date{January 2014 - March 2014}
 \begin{document}
 \maketitle
 \newpage
 \tableofcontents
 \newpage
 
-\chapter{Introduktion}
+\chapter{Introduction}
 \input{text/intro}
 
-\chapter{Data indlæsning}
-%\input{text/data_import}
+\chapter{Study of the XML documents and there structure}\label{chapter:study-xml-documents}
+\input{text/study-xml-documents}
 
-\chapter{Temporal analyse}
-%\input{text/data_analyse}
+\chapter{Creating XML schemas for validation of XML documents}\label{chapter:xml-schemas}
+\input{text/xml-schemas}
 
-\chapter{Heatmapping}
-%\input{text/heatmapping}
+\chapter{XQuery search in the video directory}\label{chapter:xquery-search}
+\input{text/xquery-search}
 
-\chapter{Analyse af geografiske områder}\label{chapter:geo_area}
-%\input{text/geo_analyse}
+\chapter{Full-Text search in the video directory}\label{chapter:full-text-search}
+\input{text/full-text-search}
 
-\chapter{Analyse af skraldebilers rute}\label{chapter:routing}
-%\input{text/rute_analyse}
+\chapter{Joining data between two XML documents}\label{chapter:joining-data}
+\input{text/joining-data}
 
-\chapter{Konklusion}
-%\input{text/konklusion}
+\chapter{Using XML in PostgreSQL}\label{chapter:xml-in-postgresql}
+\input{text/xml-in-postgresql}
+
+\chapter{Conclusion}{chapter:conclusion}
+\input{text/conclusion}
 
 
 \newpage
 \clearpage \thispagestyle{empty}
 \begin{appendix}
-\chapter{Installationsvejledning}
-%\input{text/instalation}
+\chapter{Installation guide}
+\input{text/installation-guide}
 
 \end{appendix}
 

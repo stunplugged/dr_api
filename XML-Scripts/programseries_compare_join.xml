@@ -1,0 +1,5 @@
+for $progSeries1 in doc("programseries.xml")//ProgramSerie/Slug,
+$progSeries2 in doc("programseries_video_reference.xml")//ProgramSerie/Slug 
+return 
+  $progSeries1
+

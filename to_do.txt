@@ -31,3 +31,16 @@ http://timc.idv.tw/wordcloud/
 - Update: BaseX 7.7.8
 - Create 
 
+- Slugs:
+http://www.dr.dk/nu/api/programseries/100-aars-spekulation/videos
+
+
+24.02.2014:
+- Joined
+- Schema -Video IDs
+<!--http://www.dr.dk/nu/api/programseries/100-aars-spekulation/videos-->
+<!--http://www.dr.dk/nu/api/videos/9199.xml-->
+<video videoId="{$progSeries/@NewestVideoId}"
+             title="{$progSeries/Title}"
+             url="{$progVideo/@VideoManifestUrl}"/>
+
