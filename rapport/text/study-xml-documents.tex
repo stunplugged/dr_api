@@ -1,3 +1,126 @@
+I det åbne API fra Danmarks Radio er der mange forskellige XML dokumenter til rådelighed. Nogle af XML dokumenter er forholdsvis små og indeholder kun en sti til en grafik, som fx kan anvendes i en grafisk brugerflade. Til dette projekt er der udvalgt 2 store XML dokumenter, som indeholder beskrivelser af de enkelte videoer og den programserie som de evt. er en del af.
+
+XML dokumenterne er hentet fra nedenstående adresser og deres struktur og indhold beskrives i underafsnittene her under.
+\begin{itemize}
+\item \textbf{http://www.dr.dk/nu/api/videos/all.xml}
+\item \textbf{http://www.dr.dk/nu/api/programseries.xml}
+\end{itemize}
+
+\section{Beskrivelse af dokumentet all.xml}
+Dette XML dokument indeholder information om alle videoer som er tilgængelige via API’et. Strukturen af dette dokument kan betragtes som værende relativ flad, da dybde i strukturen er relativ lille. Strukturen består udelukkende består af rodelementet ArrayOfProgramSerieVideo, som indeholder elementer af ProgramSerieVideo for hver tilgængelig video der findes. Selve elementet ProgramSerieVideo indeholder en række elementer direkte under sig, som beskriver detaljerne omkring videoen. Disse detaljer er sidste niveau i strukturen, hvilket gør at dybde af strukturen kan betragtes som værende flad. Skulle dybde øges vil det fx være muligt ved at samle elementer som BitrateKbps, Height og Width under et nyt element, fx med navnet TechDetails. 
+
+Omkring dokumentets indhold ses det at der er angivet en prolog, som fortæller at dokumentet er XML version 1 og er skrevet med tegnsæt UTF-8. Elementerne under elementet ProgramSerieVideo er ikke beskrevet yderligere i API’et fra Danmarks Radio, så de er i projektet fortolket på følgende måde:
+\begin{itemize}
+\item \textbf{Id:} Et unikt id for hver video der findes tilgængelig.
+\item \textbf{Description:} En beskrivende tekst af hver video, som typisk anvendes i en tv-program-guide.
+\item \textbf{ProgramSerieSlug:} Et navn som er tildelt videoer som er en del af en serie af programmer. Dette element kan betragtes som en slags fremmenøgle til elementet slug i XML dokumentet programseries.
+\item \textbf{Title:} En beskrivende overskrift til videoen.
+\item \textbf{Duration:} Videoen længde (ikke set anvendt i endnu)
+\item \textbf{BroadcastTime:} Tidspunkt for først gang videoen blev vist i tv.
+\item \textbf{ExpireTime:} Tidspunkt hvorefter videoen ikke vil være tilgængelig mere.
+\item \textbf{PublishTime:} Tidspunkt hvor videoen blev gjort tilgængelig.
+\item \textbf{Expired:} Er videoen ikke til tilgængelig mere?
+\item \textbf{BroadcastChannel:} Tv-kanal som videoen blev sendt på.
+\item \textbf{VideoManifestUrl:} Link til streamning af videoen.
+\item \textbf{VideoResourceUrl:} Link til streamning af videoen.
+\item \textbf{Premiere:} Er denne video en premierevideo?
+\item \textbf{BitrateKbps:} Datahastighed ved streamning af videoen. (Ikke altid sat)
+\item \textbf{Height:} Videoens højdeopløsning i pixels. (Ikke altid sat)
+\item \textbf{Width:} Videoens bredeopløsning i pixels. (Ikke altid sat)
+\end{itemize}
+
+\begin{figure}[ht]
+%\centering
+\begin{BVerbatim}
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProgramSerieVideo 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProgramSerieVideo>
+    <Id>5062</Id>
+    <Description>Det allerførste So ein Ding program ser på HP Touch Smart IQ 500. Men hvor høj er denne computers IQ egentlig?</Description>
+    <ProgramSerieSlug>so-ein-ding</ProgramSerieSlug>
+    <Title>Touch Smart skærme – So ein Ding</Title>
+    <Duration />
+    <BroadcastTime>2009-02-03T20:30:00</BroadcastTime>
+    <ExpireTime>3000-01-01T00:00:00</ExpireTime>
+    <PublishTime>0001-01-01T00:00:00</PublishTime>
+    <Expired>false</Expired>
+    <BroadcastChannel>DR2</BroadcastChannel>
+    <VideoManifestUrl>http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=1946138&amp;OnlyWritePath=True</VideoManifestUrl>
+    <VideoResourceUrl>http://www.dr.dk/handlers/GetResource.ashx?id=853642</VideoResourceUrl>
+    <Premiere>false</Premiere>
+    <BitrateKbps>0</BitrateKbps>
+    <Height>0</Height>
+    <Width>0</Width>
+  </ProgramSerieVideo>
+</ArrayOfProgramSerieVideo>
+\end{BVerbatim}
+\caption{Eksempel på dokumentet all.xml}
+\label{data:all.xml}
+\end{figure}
+
+\section{Beskrivelse af dokumentet programseries.xml}
+
+Dette XML dokument indeholder information om alle serier af programmer, som er tilgængelige via API’et. Ved serier forstås programmer som er opdelt i mange afsnit. Strukturen af dette dokument er lidt dybere end dokumentet all.xml, men ellers er den overordnet struktur identisk. Rodelementet hedder nu ArrayOfProgramSerie og indeholder elementer af ProgramSerie, som beskriver detaljer omkring selve serien af det specifikke program. Der hvor dokumentet adskiller sig dybdemæssigt i forhold til dokumentet all.xml er i elementet Labels som kan indeholde en til mange elementer af String, som er en kategorisering af seriens emne.
+
+I dokumentets indhold ses en prolog, som er identisk for det forrige dokuments prolog. Igen er elementerne under elementet ProgramSerie ikke beskrevet yderligere i API’et fra Danmarks Radio, så de er i projektet fortolket på følgende måde:
+
+\begin{itemize}
+\item \textbf{Slug:} Unik nøgle et den enkelte serie af programmer. Denne nøgle anvendes som en slags fremmenøgle i det forrige dokument (all.xml).
+\item \textbf{Title:} En beskrivende overskrift til serien af programmet.
+\item \textbf{Description:} En beskrivende tekst af hver serie, som typisk anvendes i en tv-program-guide.
+\item \textbf{ShortName:} (Ikke set anvendt)
+\item \textbf{NewestVideoId:} En slags fremmenøgle til id’et på den nyeste video i dokumentet all.xml.
+\item \textbf{NewestVideoPublishTime:} Tidspunkt for udgivelse af den nyeste video i serien af programmet.
+\item \textbf{VideoCount:} Antal af videoer i denne serie af programmer.
+\item \textbf{Labels:} Kategorisering af series indhold.
+\item \textbf{String:} En kort beskrivende tekst til kategorisering under Labels.
+\end{itemize}  
+
+\begin{figure}[ht]
+%\centering
+\begin{BVerbatim}
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProgramSerie 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProgramSerie>
+    <Slug>so-ein-ding</Slug>
+    <Title>So ein Ding</Title>
+    <Description>Det bliver ikke nemmere. Den allersidste Ding er ...</Description>
+    <ShortName />
+    <NewestVideoId>96149</NewestVideoId>
+    <NewestVideoPublishTime>2014-01-09T11:39:28</NewestVideoPublishTime>
+    <VideoCount>157</VideoCount>
+    <Labels>
+      <string>tech og viden</string>
+    </Labels>
+    <WebCmsImagePath />
+  </ProgramSerie>
+</ArrayOfProgramSerie>
+\end{BVerbatim}
+\caption{Eksempel på dokumentet programseries.xml}
+\label{data:programseries.xml}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 TODO: Insert stuff about study xml documents
 
 Description of the selected XML documents
