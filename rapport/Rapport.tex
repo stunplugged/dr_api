@@ -1,7 +1,7 @@
 \documentclass[11pt,twoside,a4paper]{report}
 \usepackage{a4}
 \usepackage[ansinew]{inputenc}
-%\usepackage[danish]{babel}
+\usepackage[danish]{babel}
 \usepackage{textcomp}
 \usepackage{paralist}		% for: \begin{compactitem}
 \usepackage{subfigure}
@@ -44,44 +44,44 @@
 %\newcommand{\primkey}[1]{\underline{#1}} %formatering for primary key
 %\newcommand{\schema}[1]{\emph{#1}} %formatering for skema
 
-\title{Complex data and logic in the database\\Using XML backend in a video application}
+\title{Kompleks data og logik i databasen\\Brug af XML dokumenter til en videoapplikation}
 \author{Stefan Jaensch, Jørgen Bo Arp Ladekjær}
-\date{January 2014 - March 2014}
+\date{Januar 2014 - Marts 2014}
 \begin{document}
 \maketitle
 \newpage
 \tableofcontents
 \newpage
 
-\chapter{Introduction}
+\chapter{Introduktion}
 \input{text/intro}
 
-\chapter{Study of the XML documents and there structure}\label{chapter:study-xml-documents}
+\chapter{Undersøgelse af XML dokumenterne og deres struktur}\label{chapter:study-xml-documents}
 \input{text/study-xml-documents}
 
-\chapter{Creating XML schemas for validation of XML documents}\label{chapter:xml-schemas}
+\chapter{Udarbejdelse af XML skema til validering af XML dokumenterne}\label{chapter:xml-schemas}
 \input{text/xml-schemas}
 
-\chapter{XQuery search in the video directory}\label{chapter:xquery-search}
+\chapter{XQuery søgning i video bibliotek}\label{chapter:xquery-search}
 \input{text/xquery-search}
 
-\chapter{Full-Text search in the video directory}\label{chapter:full-text-search}
+\chapter{Fuld tekst søgning i video bibliotek}\label{chapter:full-text-search}
 \input{text/full-text-search}
 
-\chapter{Joining data between two XML documents}\label{chapter:joining-data}
+\chapter{Join af data imellem to XML dokumenter}\label{chapter:joining-data}
 \input{text/joining-data}
 
-\chapter{Using XML in PostgreSQL}\label{chapter:xml-in-postgresql}
+\chapter{Brug af XML i PostgreSQL}\label{chapter:xml-in-postgresql}
 \input{text/xml-in-postgresql}
 
-\chapter{Conclusion}{chapter:conclusion}
+\chapter{Konklusion}{chapter:conclusion}
 \input{text/conclusion}
 
 
 \newpage
 \clearpage \thispagestyle{empty}
 \begin{appendix}
-\chapter{Installation guide}
+\chapter{Installations guide}
 \input{text/installation-guide}
 
 \end{appendix}
