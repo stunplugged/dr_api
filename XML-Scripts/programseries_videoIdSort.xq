@@ -31,8 +31,31 @@ $programseriesFileName as xs:string, $sinceDate as xs:dateTime ) as element()*{
     $progSerie/NewestVideoId
 };
 
+
+
+declare function dr:countVideoSlugs
+  ($slugName as xs:string, $videoFileName as xs:string ) as xs:integer{
+
+    count(for $x in doc($videoFileName)//ProgramSerieVideo
+          where $x[ProgramSerieSlug = $slugName]
+          return $x)
+};
+
+
+declare function dr:checkVideoCount
+  ($slugName as xs:string, $programseriesFileName as xs:string, $videoFileName as xs:string ) as element()*{
+    for $totalCount in doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie
+    where $totalCount/Slug = $slugName
+    return(
+      <totalVideoCount>{$totalCount/VideoCount/data()}</totalVideoCount>,
+      <availableVideoCount>{dr:countVideoSlugs($slugName, $videoFileName)}</availableVideoCount>
+    )
+ 
+};
+
   
   
   dr:programSeriesOfDateInterval("programseries.xml", xs:dateTime("2013-12-30T15:04:00"), xs:dateTime("2014-01-14T00:00:00")),
   dr:videoIdCountExpire(9199, "programseries_video_reference.xml", "programseries_video.xml"),
-  dr:videoIdsSinceDate("programseries.xml",xs:dateTime("2014-01-14T00:00:00") )
+  dr:videoIdsSinceDate("programseries.xml",xs:dateTime("2014-01-14T00:00:00") ),
+  dr:checkVideoCount("tv-avisen-1955", "programseries.xml", "all.xml")
