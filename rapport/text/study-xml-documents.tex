@@ -31,7 +31,7 @@ Omkring dokumentets indhold ses det at der er angivet en prolog, som fortæller a
 
 \begin{figure}[ht]
 %\centering
-\begin{BVerbatim}
+\begin{lstlisting}[style=XML]
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfProgramSerieVideo 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -54,8 +54,9 @@ Omkring dokumentets indhold ses det at der er angivet en prolog, som fortæller a
     <Height>0</Height>
     <Width>0</Width>
   </ProgramSerieVideo>
+  <!-- Herefter kommer mange flere ProgramSerieVideo elementer -->
 </ArrayOfProgramSerieVideo>
-\end{BVerbatim}
+\end{lstlisting}
 \caption{Eksempel på dokumentet all.xml}
 \label{data:all.xml}
 \end{figure}
@@ -80,7 +81,7 @@ I dokumentets indhold ses en prolog, som er identisk for det forrige dokuments p
 
 \begin{figure}[ht]
 %\centering
-\begin{BVerbatim}
+\begin{lstlisting}[style=XML]
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfProgramSerie 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -98,8 +99,9 @@ I dokumentets indhold ses en prolog, som er identisk for det forrige dokuments p
     </Labels>
     <WebCmsImagePath />
   </ProgramSerie>
+  <!-- Herefter kommer mange flere ProgramSerie elementer -->
 </ArrayOfProgramSerie>
-\end{BVerbatim}
+\end{lstlisting}
 \caption{Eksempel på dokumentet programseries.xml}
 \label{data:programseries.xml}
 \end{figure}

@@ -10,7 +10,7 @@ Skriv om fx BroadcastChannel (findes kun i nogle programmer)
 
 \begin{figure}[ht]
 %\centering
-\begin{BVerbatim}
+\begin{lstlisting}[style=XML]
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="ArrayOfProgramSerieVideo">
 		<xs:complexType>
@@ -42,10 +42,8 @@ Skriv om fx BroadcastChannel (findes kun i nogle programmer)
 				            type="xs:dateTime" />
 				<xs:element name="Expired" 				
 				            type="xs:boolean" />
-				<xs:element name="BroadcastChannel" 	
-				            type="xs:string" 
-							minOccurs="0" 
-							maxOccurs="1" />
+				<xs:element name="BroadcastChannel" 
+				            type="xs:string" minOccurs="0" maxOccurs="1" />
 				<xs:element name="VideoManifestUrl" 	
 				            type="xs:anyURI" />
 				<xs:element name="VideoResourceUrl" 	
@@ -62,7 +60,7 @@ Skriv om fx BroadcastChannel (findes kun i nogle programmer)
 		</xs:complexType>
 	</xs:element>
 </xs:schema>
-\end{BVerbatim}
+\end{lstlisting}
 \caption{XML skema til dokumentet all.xml}
 \label{data:all_schema.xsd}
 \end{figure}

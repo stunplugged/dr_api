@@ -1,3 +1,14 @@
+I dette kapitel beskrives forskellige funktioner, som alle har det tilfældes at de alle arbejder på 2 forskellige XML dokumenter samtidigt eller 2 versioner af samme XML dokumenter, men af forskellige dato. 
+
+\section{Antal tilgængelige afsnit i en programserie}
+Det er ikke altid at alle afsnit af et specifikt program er tilgængeligt i en programserie. Eksempelvis vil Danmarks Radio kun have et begrænset antal af afsnit, liggende tilgængeligt for brugerne, når det drejer sig om relativt kostbarer produktioner som dramaserier, der efterfølgende skal kunne sælges på eksempelvis DVD. I disse tilfælde vil eksempelvis kun de 2 sidste afsnit være tilgængelige i en kort periode.
+
+Det er derfor interessant at få udarbejdet en funktion, som kan returnere det totale antal af afsnit samt antallet af afsnit som er tilgængelige netop nu.
+
+Til dette formål skal elementet med navnet VideoCount, fra dokumentet programseries.xml, anvendes som det antal af afsnit, der total findes i en specifik programserie. Til at finde antallet af afsnit, som faktisk er tilgængelige netop nu, bruges aggregeringsfunktionen Count på elementerne med navnet ProgramSerieVideo i dokumentet all.xml, hvor det angives som betingelse, at der kun skal medtage de elementer, som indeholder samme værdi i elementet ProgramSerieSlug som i elementet Slug fra dokumentet programseries.xml.  Desuden ønskes kun de videoer, som har elementet Expired sat til falsk, da det kunne tænkes at en video ikke er blevet fjernet fra dokumentet all.xml, men at selve linket til videoen ikke er gyldig længere. 
+
+
+
 TODO: Insert stuff about joining data
 
 Which XML documents to be joined and why?
