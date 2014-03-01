@@ -36,9 +36,9 @@ $programseriesFileName as xs:string, $sinceDate as xs:dateTime ) as element()*{
 declare function dr:countVideoSlugs
   ($slugName as xs:string, $videoFileName as xs:string ) as xs:integer{
 
-    count(for $x in doc($videoFileName)//ProgramSerieVideo
-          where $x[ProgramSerieSlug = $slugName]
-          return $x)
+    count(for $programSerieVideo in doc($videoFileName)//ProgramSerieVideo
+          where $programSerieVideo[ProgramSerieSlug = $slugName] and $programSerieVideo/Expired/text() = "false"
+          return $programSerieVideo)
 };
 
 
