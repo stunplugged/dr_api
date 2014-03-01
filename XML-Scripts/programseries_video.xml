@@ -14,7 +14,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2142497&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2142497OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=916461
@@ -40,7 +40,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2140613&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2140613_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=915854
@@ -66,7 +66,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2134786&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2134786_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=914036
@@ -96,7 +96,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4166198&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4166198_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1555075
@@ -124,7 +124,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4141411&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4141411_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1547298
@@ -154,7 +154,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4126815&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4126815_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1542644
@@ -182,7 +182,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4122509&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4122509_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1541359
@@ -210,7 +210,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR1</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4118016&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4118016_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1540072
@@ -238,7 +238,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4116936&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4116936_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1539760
@@ -266,7 +266,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4111141&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4111141_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1538025
@@ -296,7 +296,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4110762&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4110762_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1537902
@@ -326,7 +326,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4105032&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4105032_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1536120
@@ -354,7 +354,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4102412&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4102412_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1535144
@@ -382,7 +382,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4039951&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4039951_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1515953
@@ -410,7 +410,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4038444&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4038444_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1515473
@@ -438,7 +438,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4035025&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4035025_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1514431
@@ -468,7 +468,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4031690&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4031690_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1513473
@@ -498,7 +498,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR1</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4025908&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4025908_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1511704
@@ -526,7 +526,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4025224&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4025224_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1511476
@@ -554,7 +554,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR2</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3674935&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3674935_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1400630
@@ -582,7 +582,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4355444&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4355444_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1620060
@@ -610,7 +610,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3902012&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3902012_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1472035
@@ -638,7 +638,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4518506&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4518506_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1674053
@@ -666,7 +666,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4469622&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4469622_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1658904
@@ -692,7 +692,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4433703&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4433703_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1647927
@@ -722,7 +722,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3938840&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3938840_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1483661
@@ -739,7 +739,7 @@
   <ProgramSerieVideo>
 	<Id>78328</Id>
 	<Description>
-	Arkitekten Morten Schmidt, som er partner ved arkitektfirmaet Schmidt, Hammer & Lassen - kendt for blandt andet Århus kunstmuseum, ARoS og Den Sorte Diamant i København, bor i en funkisvilla fra midten af 1930'erne. Villaen ligger på en af de mest eftertragtede grunde i Århus og har intet mindre end Dronningens sommerresidens, Marselisborg Slot som nabo.
+	Arkitekten Morten Schmidt, som er partner ved arkitektfirmaet Schmidt, Hammer _ Lassen - kendt for blandt andet Århus kunstmuseum, ARoS og Den Sorte Diamant i København, bor i en funkisvilla fra midten af 1930'erne. Villaen ligger på en af de mest eftertragtede grunde i Århus og har intet mindre end Dronningens sommerresidens, Marselisborg Slot som nabo.
 	</Description>
 	<ProgramSerieSlug>arkitektens-hjem</ProgramSerieSlug>
 	<Title>Arkitektens Hjem: Morten Schmidt</Title>
@@ -750,7 +750,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3917102&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3917102_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1476853
@@ -778,7 +778,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3887203&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3887203_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1467421
@@ -806,7 +806,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3902007&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3902007_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1462401
@@ -834,7 +834,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3851026&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3851026_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1455677
@@ -862,7 +862,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3851014&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3851014_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1455672
@@ -890,7 +890,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3833452&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3833452_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1450093
@@ -918,7 +918,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVK</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3799425&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3799425_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1439397
@@ -946,7 +946,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2913953&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2913953_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1164139
@@ -974,7 +974,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2884898&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2884898_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1155011
@@ -1002,7 +1002,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR1</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3965534&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3965534_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1492347
@@ -1030,7 +1030,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2857254&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2857254_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1146452
@@ -1060,7 +1060,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2599403&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2599403_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1063204
@@ -1077,7 +1077,7 @@
   <ProgramSerieVideo>
 	<Id>30377</Id>
 	<Description>
-	Arkitekten Morten Schmidt, som er partner ved arkitektfirmaet Schmidt, Hammer & Lassen - kendt for b.a. Århus kunstmuseum, ARoS og Den Sorte Diamant, bor i en funkisvilla fra midten af 1930'erne. Villaen har intet mindre end Dronningens sommerresidens, Marselisborg Slot som nabo.
+	Arkitekten Morten Schmidt, som er partner ved arkitektfirmaet Schmidt, Hammer _ Lassen - kendt for b.a. Århus kunstmuseum, ARoS og Den Sorte Diamant, bor i en funkisvilla fra midten af 1930'erne. Villaen har intet mindre end Dronningens sommerresidens, Marselisborg Slot som nabo.
 	</Description>
 	<ProgramSerieSlug>arkitektens-hjem</ProgramSerieSlug>
 	<Title>Arkitektens Hjem: Morten Schmidt</Title>
@@ -1088,7 +1088,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2535089&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2535089_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1043296
@@ -1116,7 +1116,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2513920&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2513920_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1036318
@@ -1144,7 +1144,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2493571&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2493571_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1029768
@@ -1172,7 +1172,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2490701&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2490701_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1028834
@@ -1200,7 +1200,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR Update</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2480980&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2480980_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1025498
@@ -1228,7 +1228,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2454399&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2454399_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1016896
@@ -1256,7 +1256,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR K</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2446578&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=2446578_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1014313
@@ -1284,7 +1284,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>TVR</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3580679&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=3580679_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1372106
@@ -1312,7 +1312,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR Ramasjang</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=1924337&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=1924337_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=846917
@@ -1340,7 +1340,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4452762&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4452762_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1653785
@@ -1368,7 +1368,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4427011&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4427011_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1645925
@@ -1396,7 +1396,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR1</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4349914&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4349914_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1618085
@@ -1424,7 +1424,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4452762&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4452762_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1653785
@@ -1452,7 +1452,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4427011&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4427011_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1645925
@@ -1482,7 +1482,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR1</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4342596&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4342596_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1615338
@@ -1508,7 +1508,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR1</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4274765&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4274765_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1590373
@@ -1536,7 +1536,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4243518&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4243518_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1579925
@@ -1564,7 +1564,7 @@
 	<Expired>false</Expired>
 	<BroadcastChannel>DR3</BroadcastChannel>
 	<VideoManifestUrl>
-	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4160057&OnlyWritePath=True
+	http://www.dr.dk/Forms/Published/PlaylistGen.aspx?qid=4160057_OnlyWritePath=True
 	</VideoManifestUrl>
 	<VideoResourceUrl>
 	http://www.dr.dk/handlers/GetResource.ashx?id=1553134

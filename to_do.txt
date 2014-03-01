@@ -14,7 +14,7 @@
 Stefan: XS-Schema
 http://www.dr.dk/nu/api/programseries.xml
 
-
+http://lots.uni-leipzig.de:8080/xquery/tutorial/xml/ns/
 
 
 Selects--XQuery -->
@@ -40,7 +40,6 @@ http://www.dr.dk/nu/api/programseries/100-aars-spekulation/videos
 - Schema -Video IDs
 <!--http://www.dr.dk/nu/api/programseries/100-aars-spekulation/videos-->
 <!--http://www.dr.dk/nu/api/videos/9199.xml-->
-<video videoId="{$progSeries/@NewestVideoId}"
-             title="{$progSeries/Title}"
-             url="{$progVideo/@VideoManifestUrl}"/>
+
+4749398894
 
