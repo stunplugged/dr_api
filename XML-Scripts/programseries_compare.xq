@@ -138,16 +138,15 @@ declare function dr:compareNodes(
   let $nodeFile2 := dr:findProgramSerie($slugName, $nameFile2)/node()
 
   return
-  (:
-    OBS!!! don't find all changes!!!
+   (: OBS!!! don't find all changes!!!
    for $index in count($nodeFile1)
-     return dr:compareElement( $slugName, $nodeFile1[$index],  $nodeFile2[$index] )
-  :)
+     return dr:compareElement( $slugName, $nodeFile1[$index],  $nodeFile2[$index] ):)
+
   (:Obs cross-product!!-->Performance:)
+    
    for $singleElement1 in $nodeFile1,
-     $singleElement2 in $nodeFile2
+       $singleElement2 in $nodeFile2
      return dr:compareElement( $slugName, $singleElement1,  $singleElement2 ) 
-  
 };
 
 
