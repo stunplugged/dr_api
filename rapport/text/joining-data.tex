@@ -8,7 +8,7 @@ Det er derfor interessant at få udarbejdet en funktion, som kan returnere det to
 Til dette formål skal elementet med navnet VideoCount, fra dokumentet programseries.xml, anvendes som det antal af afsnit, der total findes i en specifik programserie. Til at finde antallet af afsnit, som faktisk er tilgængelige netop nu, bruges aggregeringsfunktionen Count på elementerne med navnet ProgramSerieVideo i dokumentet all.xml, hvor det angives som betingelse, at der kun skal medtage de elementer, som indeholder samme værdi i elementet ProgramSerieSlug som i elementet Slug fra dokumentet programseries.xml.  Desuden ønskes kun de videoer, som har elementet Expired sat til falsk, da det kunne tænkes at en video ikke er blevet fjernet fra dokumentet all.xml, men at selve linket til videoen ikke er gyldig længere. 
 
 \begin{figure}[ht]
-\begin{lstlisting}[style=XML]
+\begin{lstlisting}[style=FAKE_XQUERY]
 declare function dr:checkVideoCount
   ($slugName as xs:string, $programseriesFileName as xs:string, $videoFileName as xs:string ) as element()*{
     for $totalCount in doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie

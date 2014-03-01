@@ -16,6 +16,14 @@ http://www.dr.dk/nu/api/programseries.xml
 
 http://lots.uni-leipzig.de:8080/xquery/tutorial/xml/ns/
 
+Obs: data() vs. text()
+<a>
+  <b>hello <c>world</c></b>
+</a>
+Doing //b/text() will return the text node 'hello ' just like //b/element() will return the element c.
+
+data($arg) is a function that returns the atomic value of a node, for example data(//b) will return 'hello world'. If you use the data($arg) function on a document with a schema then the type will be kept intact.
+
 
 Selects--XQuery -->
 Parameter --> Example 

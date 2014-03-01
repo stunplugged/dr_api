@@ -32,7 +32,6 @@ $programseriesFileName as xs:string, $sinceDate as xs:dateTime ) as element()*{
 };
 
 
-
 declare function dr:countVideoSlugs
   ($slugName as xs:string, $videoFileName as xs:string ) as xs:integer{
 
@@ -44,16 +43,15 @@ declare function dr:countVideoSlugs
 
 declare function dr:checkVideoCount
   ($slugName as xs:string, $programseriesFileName as xs:string, $videoFileName as xs:string ) as element()*{
-    for $totalCount in doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie
-    where $totalCount/Slug = $slugName
-    return(
-      <totalVideoCount>{$totalCount/VideoCount/data()}</totalVideoCount>,
+    let $totalCount := doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie[Slug = $slugName]/VideoCount/text()
+    return( 
+      <totalVideoCount>{$totalCount}</totalVideoCount>,
       <availableVideoCount>{dr:countVideoSlugs($slugName, $videoFileName)}</availableVideoCount>
-    )
- 
+     )
 };
 
-  
+
+
   
   dr:programSeriesOfDateInterval("programseries.xml", xs:dateTime("2013-12-30T15:04:00"), xs:dateTime("2014-01-14T00:00:00")),
   dr:videoIdCountExpire(9199, "programseries_video_reference.xml", "programseries_video.xml"),
