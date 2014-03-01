@@ -38,7 +38,8 @@
 
 
 \lstdefinestyle{FAKE_XQUERY} {
-    language=XSLT,
+    language=XML,
+    alsolanguage=XSLT,
     extendedchars=true, 
     breaklines=true,
     breakatwhitespace=true,
@@ -53,8 +54,16 @@
     keywordstyle=\color{orangered},
     stringstyle=\ttfamily\color{black}, %\normalfont,
     tagstyle=\color{darkblue}\bf\normalfont,
-    morekeywords={declare, function},
 }
+
+
+\lstdefinelanguage{XQUERY}
+{
+morekeywords={declare, function, string, as, dateTime, element, for, in, fn, return},
+sensitive=false,
+morestring=[b]",
+}
+
 
 
 \usepackage{fancyhdr}
