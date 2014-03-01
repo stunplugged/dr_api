@@ -1,3 +1,72 @@
+Som beskrevet i det foregående kapitel, så er der ikke i API'et ikke udstillet noget validerings-skema eller nogen indbygget DTD (Document Type Definition) til de XML dokumenter der er til rådighed. Den manglende mulighed for at validere XML dokumenterne betyder, at videoapplikation må stole på at XML dokumenterne altid overholder samme struktur. Ændres strukturen pludseligt vil det betyde at de søgefunktioner, som udarbejdes i dette projekt, ikke vil kunne fungere længere. Det er dermed sagt, at der kun gives garanti for at alle de funktioner, som udarbejdes i dette projekt kun kan anvendes såfremt at de XML dokumenter, som hentes fra Danmarks Radio's API, kan valideres imod de XML skemaer, som beskrives i dette kapitel. 
+
+Nogle af fordelene ved at anvende XML skema fremfor DTD er, at XML skema er meget mere kraftfuldt end DTD da XML skema eksempelvis understøtter datatyper og desuden er selve XML skemaer selv beskrevet med XML Syntax og derfor er relative lette at læse.
+
+\section{Beskrivelse af XML skema til all.xml}
+
+Skriv om anvendelse af sequence
+Skrive om valg af datatyper.
+Skriv om fx BroadcastChannel (findes kun i nogle programmer)
+
+\begin{figure}[ht]
+%\centering
+\begin{BVerbatim}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ArrayOfProgramSerieVideo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ProgramSerieVideo" 
+				            maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	<xs:element name="ProgramSerieVideo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Id" 					
+				            type="xs:nonNegativeInteger" />
+				<xs:element name="Description" 			
+				            type="xs:string" />
+				<xs:element name="ProgramSerieSlug" 	
+				            type="xs:string" />
+				<xs:element name="Title" 				
+				            type="xs:string" />
+				<xs:element name="Duration" 			
+				            type="xs:string" />
+				<xs:element name="BroadcastTime" 		
+				            type="xs:dateTime" 
+							nillable="true" />
+				<xs:element name="ExpireTime" 			
+				            type="xs:dateTime" />
+				<xs:element name="PublishTime" 			
+				            type="xs:dateTime" />
+				<xs:element name="Expired" 				
+				            type="xs:boolean" />
+				<xs:element name="BroadcastChannel" 	
+				            type="xs:string" 
+							minOccurs="0" 
+							maxOccurs="1" />
+				<xs:element name="VideoManifestUrl" 	
+				            type="xs:anyURI" />
+				<xs:element name="VideoResourceUrl" 	
+				            type="xs:anyURI" />
+				<xs:element name="Premiere" 			
+				            type="xs:boolean" />
+				<xs:element name="BitrateKbps" 			
+				            type="xs:nonNegativeInteger" />
+				<xs:element name="Height" 				
+				            type="xs:nonNegativeInteger" />
+				<xs:element name="Width" 				
+				            type="xs:nonNegativeInteger" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+\end{BVerbatim}
+\caption{XML skema til dokumentet all.xml}
+\label{data:all_schema.xsd}
+\end{figure}
+
 TODO: Insert stuff about xml schemas
 
 Description of how we create them and the choice of types. 
