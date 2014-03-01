@@ -1,6 +1,6 @@
 I dette kapitel beskrives forskellige funktioner, som alle har det tilfældes at de alle arbejder på 2 forskellige XML dokumenter samtidigt eller 2 versioner af samme XML dokumenter, men af forskellige dato. 
 
-\section{Antal tilgængelige afsnit i en programserie}
+\section{Find tilgængelige afsnit i en programserie}
 Det er ikke altid at alle afsnit af et specifikt program er tilgængeligt i en programserie. Eksempelvis vil Danmarks Radio kun have et begrænset antal af afsnit, liggende tilgængeligt for brugerne, når det drejer sig om relativt kostbarer produktioner som dramaserier, der efterfølgende skal kunne sælges på eksempelvis DVD. I disse tilfælde vil eksempelvis kun de 2 sidste afsnit være tilgængelige i en kort periode.
 
 Det er derfor interessant at få udarbejdet en funktion, som kan returnere det totale antal af afsnit samt antallet af afsnit som er tilgængelige netop nu.
@@ -35,9 +35,22 @@ declare function dr:countVideoSlugs
 \label{joining:checkVideoCount}
 \end{figure}
 
-TODO: Insert stuff about joining data
+\section{Find ændringer imellem 2 versioner af samme XML dokument}
+Set over længere tid vil videoer eller programserier blive tilføjet og fjernet til og fra XML dokumenterne eller måske bare få opdateret enkelte af deres beskrivende elementer som fx Description, NewestVideoId eller VideoCount i dokumentet programseries.xml. Da det kunne tænkes at videoapplikationen, som dette projekt skal understøtte, anvender en form for intern lagring (cache) af eksempelvis et billede til videoen eller teksten, som beskriver videoen, så vil der være nyttigt at kunne vedligeholde dette intern lager ved at kunne identificeres ændringer siden sidste version af XML dokumentet.
 
-Which XML documents to be joined and why?
+Alle de ændringer som bliver identificeret vil blive indpakket i et ny XML dokumentet, hvor de grupperes efter om det er en programserie, som er blevet tilføjet, fjernet eller opdateret/ændret imellem de 2 versioner af XML dokumenterne. 
 
-Compare the same XML document different dates.
-( Is something added,removed,updated ? list results)
+\subsection{Hovedfunktionalitet}
+For at kunne identificeres ændringer imellem 2 versioner af dokumentet programseries.xml, så er der implementet funktionen compareDocuments, som tager imod de 2 versioner af dokumentet og giver et resultatset tilbage, som indeholder elementer, der er blevet tilføjet, fjernet eller opdateret. Funktionen compareDocuments anvender hjælpefunktioner til at skabe de enkelte dele af resultatsættet. Disse hjælpefunktioner er beskrevet i underafsnittende herunder.
+
+\subsection{Tilføjelse eller fjernelse af programserie}
+Funktionen til at identificeres om en programserie er blevet tilføjet eller fjernet er døbt leftExceptRight  og udfører except funktionalitet, hvor elemeterne fra sekvensen på venstre side returneres, hvis de ikke forekommer i sekvensen på højre side. For at udfører expect funktionaliteten er der anvendt et Context Item Expression, som gør at hvert enkelt element fra sekvensen på venstre side bliver evalueret med hele sekvensen på højre side (not(sekHøj[x] = sekVen). Hvis elementet eksistere i sekvensen på højre side er denne evalueringen negativ ellers positiv hvis elementet ikke findes. Dermed returneres kun elementerne hvor evaluering er positiv.
+
+Funktionen leftExceptRight anvendes 2 gange som hjælpefunktion, da den nye version af dokumentet skal tjekkes imod den gamle for at finde tilføjende programserie og den gamle version skal tjekkes imod den nye for at finde de programserier, som er fjernet fra dokumentet.
+
+\subsection{Ændring i indhold af programserie}
+Funktionen til at identificer om der er ændringer til en specifik programserie, som er indeholdt både i den nye og gamle version af dokumentet programseries.xml er baseret på en join operation ”joinSlug()” imellem den gamle og nye version af dokumentet, for at finde fælles programserier for de 2 dokumenter. Join operationen returnere kun en liste af slug elementer, som senere bruges til at identificere programserierne når deres indhold skal sammenlignes. 
+
+I funktionen compareNodes hentes den specikke programserie fra hver version af dokumentet, hvorefter funktionen compareElement bliver anvendt til hvert element i programserien.
+
+Funktionen compareElement sammenligner kun elementer med samme navn og tjekker at deres indhold er identisk. Kun hvis indholdet af det enkelte element er forskelligt returens et ny beskrivende element, som hedder changedContentProgramSerie. Dette element indeholder attributten slug, som identificer selve programserien og attributten elementName, som identificer det element navn som har ændret sig. Desuden indeholder elementet changedContentProgramSerie et element fra hver version af de oprindelige dokumenter (contentFile1 og contentFile2), således at det er muligt at se hvad der selve forskellen imellem de 2 versioner.   
