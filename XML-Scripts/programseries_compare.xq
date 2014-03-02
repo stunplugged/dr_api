@@ -153,62 +153,83 @@ declare function dr:compareNodes(
 
 declare function dr:compareDocuments
 ( $nameFile1 as xs:string, $nameFile2 as xs:string ) as element()*{
-(
-   
-  <Changes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">,
- 
-  <removedProgramSerieFromFile1>
-  {
-     for $singleSlug in dr:leftExceptRight( $nameFile1, $nameFile2)
-     return 
-       dr:findProgramSerie($singleSlug/data(), $nameFile1)
-  }
-  </removedProgramSerieFromFile1>,
-
-
-  <addedProgramSerieToFile2>
-  {
-     for $singleSlug in dr:leftExceptRight( $nameFile2, $nameFile1)
-     return 
-       dr:findProgramSerie($singleSlug/data(), $nameFile2)  
-  }     
-  </addedProgramSerieToFile2>,
-
-
-  <changedContentProgramSeries>
-  {
-    for $singleSlug in dr:joinSlug( $nameFile1, $nameFile2 )
-    return
-      dr:compareNodes($singleSlug/data(), $nameFile1, $nameFile2)
-  }
-  </changedContentProgramSeries>,
   
-  </Changes>
+  <differences>
+ (:  
+    <removedProgramSerieFromFile1>
+    {
+       for $singleSlug in dr:leftExceptRight( $nameFile1, $nameFile2)
+       return 
+         dr:findProgramSerie($singleSlug/data(), $nameFile1)
+    }
+    </removedProgramSerieFromFile1>
+  
+  
+    <addedProgramSerieToFile2>
+    {
+       for $singleSlug in dr:leftExceptRight( $nameFile2, $nameFile1)
+       return 
+         dr:findProgramSerie($singleSlug/data(), $nameFile2)  
+    }     
+    </addedProgramSerieToFile2>
+  
+   :)
+    <changedContentProgramSeries>
+    {
+      for $singleSlug in dr:joinSlug( $nameFile1, $nameFile2 )
+      return
+        dr:compareNodes($singleSlug/data(), $nameFile1, $nameFile2)
+    }
+    </changedContentProgramSeries>
+
+  </differences>
+  
+};
+
+
+(:
+declare function dr:compareDocuments2
+( $nameFile1 as xs:string, $nameFile2 as xs:string ) as element()*{
+  let $xmlHeader := '<?xml version="1.0" encoding="UTF-8"?>'
+  return(
+    <?xml version="1.0" encoding="UTF-8"?>,
+     element changes{
+       attribute test1 {"http://www.w3.org/2001/XMLSchema-instance"},
+       attribute test2 {"http://www.w3.org/2001/XMLSchema"},
+        element test1{
+          text {"TESTETS"}
+      }  
+    } 
   )
 };
 
 
-declare function dr:compareDocuments2
-( $nameFile1 as xs:string, $nameFile2 as xs:string ) as node()*{
-  document{
+  <?xml version="1.0" encoding="UTF-8"?>
+  <changes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  </changes>
+  
+  return
+   $xmlHeader
+     document{
+    
     element changes{
-      text {
         element test1{
-          text {TESTETS}
-        }
+          text {"TESTETS"}
       }
     }
   }
-
-};
-
+)
 
 
-(:
+
+:)
+
+
+
 let $programseries_file1 := "programseries.xml"
 let $programseries_file2 := "programseries_video_reference.xml"
 return 
-
 <differences>
   <removedProgramSerieFromFile1>
   {
@@ -238,7 +259,6 @@ return
 
 </differences>
 
-:)
 
 
- dr:compareDocuments2("programseries.xml", "programseries_video_reference.xml")
+(: dr:compareDocuments("programseries.xml", "programseries_video_reference.xml"):)
