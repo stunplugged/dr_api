@@ -10,6 +10,7 @@
 - List of categories --> List of programs in one kategories
 - Søgninger med tidsinterval (fra til)
 
+- Kapitel 4:
 
 Stefan: XS-Schema
 http://www.dr.dk/nu/api/programseries.xml
