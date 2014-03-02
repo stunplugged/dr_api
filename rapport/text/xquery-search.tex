@@ -1,5 +1,29 @@
 
 \section{Find alle kategorierne til programserierne}
+Brugeren af videoapplikationen skal have muligheden for at navigere igennem de forskellige 
+programseries kategorierne der findes på tidspunktet. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} returnerer en elementer med navnet af kategorier og der ud over et element med samlet antal af forskellige kategorier. 
+
+\begin{figure}[ht]
+%\centering
+\begin{lstlisting}[style=FAKE_XQUERY, language=XQUERY]
+
+declare function dr:getProgramSeriesCategory
+  ( $programseriesFileName as xs:string) as element()*{
+    
+    let $progSerieLables := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels/string/text())
+    return (
+      <countCategory>{count($progSerieLables)}</countCategory>,
+      (
+      for $lable in $progSerieLables
+        return <category>{$lable}</category>
+      )
+    )
+};
+
+\end{lstlisting}
+\caption{Funktion til at finde navn af programserierne og samlet antal.}
+\label{xquerySearch:getProgramSeriesCategory}
+\end{figure}
 
 
 

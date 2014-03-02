@@ -1,6 +1,27 @@
-distinct-values(//ArrayOfProgramSerie/ProgramSerie/Labels/string/text())
+declare namespace dr = "http://www.dr.dk";
+
+declare function dr:getProgramSeriesCategory
+  ( $programseriesFileName as xs:string) as element()*{
+    
+    let $progSerieLables := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels/string/text())
+    return (
+      <countCategory>{count($progSerieLables)}</countCategory>,
+      (
+      for $lable in $progSerieLables
+        return <category>{$lable}</category>
+      )
+    )
+};
+  
+  
+dr:getProgramSeriesCategory("programseries.xml")
 
 
+(: XPath:
+distinct-values(/ArrayOfProgramSerie/ProgramSerie/Labels/string/text())
+:)
+
+(: Resultat: programseries.xml
 dokumentar 
 nyheder og aktualitet
 unge
@@ -24,6 +45,4 @@ serier
 satire
 tro og religion
 forbruger
-
-
-
+:)
