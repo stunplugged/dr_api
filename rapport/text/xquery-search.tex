@@ -29,7 +29,7 @@ declare function dr:getProgramSeriesCategory
 
 
 \section{Find antal programserier pr. kategori}
-
+Når en bruger vægler et kategoriet skal videoapplikationen viser antallet af programserier i kategoriet og forskellige informationer om de. I funktionen \ref{xquerySearch:countProgramSeriesOfCategory} finder den XPath udryk alle ProgramSerie elementer hvor element <string> i element <Labels> har den sammen værdi som det valgte kategori. Variablen \$progSeries holder en sekvens med alle fundet ProgramSerie elementer og ikke kun elementet <Labels> fordi /.. ved slutning af sekvensen vælger forældre elementet som er ProgramSerie. Den XQuery funktion count() taler antal af fundet ProgramSerie elementer. Denne information og alle de ProgramSerie elementer bliver returneret i elementet <programSeriesCategory>.
 
 \begin{figure}[ht]
 %\centering
@@ -38,7 +38,7 @@ declare function dr:getProgramSeriesCategory
 declare function dr:countProgramSeriesOfCategory
   ( $programseriesFileName as xs:string, $category as xs:string ) as element()*{
     
-    let $progSeries := doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels[string=$category]
+    let $progSeries := doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels[string=$category]/..
     return (
       <programSeriesCategory>
         <nameCategory>{$category}</nameCategory>
@@ -46,7 +46,7 @@ declare function dr:countProgramSeriesOfCategory
         {
          for $progSerie in $progSeries
            (:alternativ: return $progSerie/ancestor::node()[1]:)
-           return $progSerie/..
+           return $progSerie
          }
       </programSeriesCategory>
     )

@@ -3,7 +3,7 @@ declare namespace dr = "http://www.dr.dk";
 declare function dr:countProgramSeriesOfCategory
   ( $programseriesFileName as xs:string, $category as xs:string ) as element()*{
     
-    let $progSeries := doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels[string=$category]
+    let $progSeries := doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels[string=$category]/..
     return (
       <programSeriesCategory>
         <nameCategory>{$category}</nameCategory>
@@ -11,7 +11,7 @@ declare function dr:countProgramSeriesOfCategory
         {
          for $progSerie in $progSeries
            (:alternativ: return $progSerie/ancestor::node()[1]:)
-           return $progSerie/..
+           return $progSerie
          }
       </programSeriesCategory>
     )
