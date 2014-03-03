@@ -16,6 +16,23 @@ declare function dr:countProgramSeriesOfCategory
       </programSeriesCategory>
     )
 };
+
+
+declare function dr:videosOfCategory
+( $programseriesFileName as xs:string,  $programseriesVideoFileName as xs:string, $category as xs:string ) as element()*{
+
+  let $progSeries := dr:countProgramSeriesOfCategory($programseriesFileName, $category )
+  return(
+    for $progSerie in $progSeries
+    return 
+    
+  )
+
+};
+
+
+
+
   
 dr:countProgramSeriesOfCategory("programseries.xml",'kultur' )
 
