@@ -1,7 +1,8 @@
 
 \section{Find alle kategorierne til programserierne}
 Brugeren af videoapplikationen skal have muligheden for at navigere igennem de forskellige 
-programseries kategorierne der findes på tidspunktet. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} returnerer en elementer med navnet af kategorier og der ud over et element med samlet antal af forskellige kategorier. 
+programseries kategorierne der findes på tidspunktet. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} bruger en XPath udryk til at finde alle kategori navne i filen og funktionen distinct-value() selekterer kun unik navne. En for lykke returnerer kategorinavne som element med tag <category> og udover returnerer funktionen getProgramSeriesCategory() et element, <countCategory>, med antal af forskellige kategorier. 
+
 
 \begin{figure}[ht]
 %\centering
@@ -27,8 +28,40 @@ declare function dr:getProgramSeriesCategory
 
 
 
-
 \section{Find antal programserier pr. kategori}
+
+
+\begin{figure}[ht]
+%\centering
+\begin{lstlisting}[style=FAKE_XQUERY, language=XQUERY]
+
+declare function dr:countProgramSeriesOfCategory
+  ( $programseriesFileName as xs:string, $category as xs:string ) as element()*{
+    
+    let $progSeries := doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels[string=$category]
+    return (
+      <programSeriesCategory>
+        <nameCategory>{$category}</nameCategory>
+        <countProgSeries>{count($progSeries)}</countProgSeries>
+        {
+         for $progSerie in $progSeries
+           (:alternativ: return $progSerie/ancestor::node()[1]:)
+           return $progSerie/..
+         }
+      </programSeriesCategory>
+    )
+};
+
+\end{lstlisting}
+\caption{Funktion til at finde alle programserierne af kategoriet og samlet antal.}
+\label{xquerySearch:countProgramSeriesOfCategory}
+\end{figure}
+
+
+\section{Find alle videoer med i en specifik kategori}
+
+
+
 
 
 
@@ -77,20 +110,20 @@ declare function dr:getBroadCastTime
 
 
 
-\section{Find alle videoer med i en specifik kategori}
 
 
 TODO: Insert stuff about xquery search
 
 Description of each search and how it is solved
 
-Find all kinds of labels for prorgams.
+Done! Find programs between specific date intervals.
+Done! Find all kinds of labels for prorgams.
 Find the number of programs for each label.
 
-Find all kinds of broadcasting channels.
+Identisk! Find all kinds of broadcasting channels.
 Find the number of programs for each channel.
 
-Find programs between specific date intervals.
-
 Find all videos from a particular series of programs sorted by date.
+
+
 
