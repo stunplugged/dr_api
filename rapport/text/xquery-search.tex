@@ -1,7 +1,7 @@
 
 \section{Find alle kategorierne til programserierne}
 Brugeren af videoapplikationen skal have muligheden for at navigere igennem de forskellige 
-programseries kategorierne der findes pÃ¥ tidspunktet. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} bruger en XPath udryk til at finde alle kategori navne i filen og funktionen distinct-value() selekterer kun unik navne. En for lykke returnerer kategorinavne som element med tag <category> og udover returnerer funktionen getProgramSeriesCategory() et element, <countCategory>, med antal af forskellige kategorier. 
+programseries kategorierne der findes på tidspunktet. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} bruger en XPath udryk til at finde alle kategori navne i filen og funktionen distinct-value() selekterer kun unik navne. En for lykke returnerer kategorinavne som element med tag <category> og udover returnerer funktionen getProgramSeriesCategory() et element, <countCategory>, med antal af forskellige kategorier. 
 
 
 \begin{figure}[ht]
@@ -29,7 +29,7 @@ declare function dr:getProgramSeriesCategory
 
 
 \section{Find antal programserier pr. kategori}
-NÃ¥r en bruger vÃ¦gler et kategoriet skal videoapplikationen viser antallet af programserier i kategoriet og forskellige informationer om de. I funktionen \ref{xquerySearch:countProgramSeriesOfCategory} finder den XPath udryk alle ProgramSerie elementer hvor element <string> i element <Labels> har den sammen vÃ¦rdi som det valgte kategori. Variablen \$progSeries holder en sekvens med alle fundet ProgramSerie elementer og ikke kun elementet <Labels> fordi /.. ved slutning af sekvensen vÃ¦lger forÃ¦ldre elementet som er ProgramSerie. Den XQuery funktion count() taler antal af fundet ProgramSerie elementer. Denne information og alle de ProgramSerie elementer bliver returneret i elementet <programSeriesCategory>.
+Når en bruger vægler et kategoriet skal videoapplikationen viser antallet af programserier i kategoriet og forskellige informationer om de. I funktionen \ref{xquerySearch:countProgramSeriesOfCategory} finder den XPath udryk alle ProgramSerie elementer hvor element <string> i element <Labels> har den sammen værdi som det valgte kategori. Variablen \$progSeries holder en sekvens med alle fundet ProgramSerie elementer og ikke kun elementet <Labels> fordi /.. ved slutning af sekvensen vælger forældre elementet som er ProgramSerie. Den XQuery funktion count() taler antal af fundet ProgramSerie elementer. Denne information og alle de ProgramSerie elementer bliver returneret i elementet <programSeriesCategory>.
 
 \begin{figure}[ht]
 %\centering
@@ -68,7 +68,7 @@ declare function dr:countProgramSeriesOfCategory
 
 \section{Find alle videoer inden for et specifikt tidsinterval}
 
-Videoapplikationen skal have en sÃ¸gefunktion hvor brugeren kan finde programserievideoer hvor udsendelse tidspunkt ligger inden for et specifikt tidsinterval. XQuery funktionen er vist i Figur \ref{xquerySearch:programSeriesVideoBroadcastDateInterval} og tager navnet af XML video filen, start og stop tidspunktet som argument. En for lykke lÃ¦ser tidsinformation i tagget <BroadcastTime> af hvert element ProgramSerieVideo og returnerer kun de ProgramSerieVideo elementer hvor udsendelse tidspunktet ligger inden for tidsintervallet. XQuery har to forskellige sammenligningsoperatorer, vÃ¦rdier sammenligningsoperatorer (f.eks. le, ge) som er beregnet til at sammenligne enkelte vÃ¦rdi og generelte sammenligningsoperatorer (f.eks. <=, =>) for at sammenligne sekvenser med flere vÃ¦rdier. I denne funktion blev brugt de fÃ¸rste variant fordi der er kun enkelte vÃ¦rdier som skal sammenlignes. Det er nÃ¸dvendig at tage hÃ¸jde for at tagget <BroadcastTime> kan vÃ¦re tomt. I denne situation vil cast fra "tomt" til xs:dateTime() giver en dynamisk fejl. XQuery er et funktionelt programmeringssprog og der medfÃ¸lges at variabler er uforanderlig. Derfor bruges en hjÃ¦lpefunktion, Figur \ref{xquerySearch:getBroadCastTime} som kontrollerer nÃ¥r tagget er tomt og dermed returnere en dummy date ("1900-01-01T00:00:00") ellers den fundet date, til at opdatere den interne variable \$broadCastTime.
+Videoapplikationen skal have en søgefunktion hvor brugeren kan finde programserievideoer hvor udsendelse tidspunkt ligger inden for et specifikt tidsinterval. XQuery funktionen er vist i Figur \ref{xquerySearch:programSeriesVideoBroadcastDateInterval} og tager navnet af XML video filen, start og stop tidspunktet som argument. En for lykke læser tidsinformation i tagget <BroadcastTime> af hvert element ProgramSerieVideo og returnerer kun de ProgramSerieVideo elementer hvor udsendelse tidspunktet ligger inden for tidsintervallet. XQuery har to forskellige sammenligningsoperatorer, værdier sammenligningsoperatorer (f.eks. le, ge) som er beregnet til at sammenligne enkelte værdi og generelte sammenligningsoperatorer (f.eks. <=, =>) for at sammenligne sekvenser med flere værdier. I denne funktion blev brugt de første variant fordi der er kun enkelte værdier som skal sammenlignes. Det er nødvendig at tage højde for at tagget <BroadcastTime> kan være tomt. I denne situation vil cast fra "tomt" til xs:dateTime() giver en dynamisk fejl. XQuery er et funktionelt programmeringssprog og der medfølges at variabler er uforanderlig. Derfor bruges en hjælpefunktion, Figur \ref{xquerySearch:getBroadCastTime} som kontrollerer når tagget er tomt og dermed returnere en dummy date ("1900-01-01T00:00:00") ellers den fundet date, til at opdatere den interne variable \$broadCastTime.
 
 
 \begin{figure}[ht]
@@ -104,7 +104,7 @@ declare function dr:getBroadCastTime
 };
 
 \end{lstlisting}
-\caption{Funktion til at lÃ¦se BroadcastTime}
+\caption{Funktion til at læse BroadcastTime}
 \label{xquerySearch:getBroadCastTime}
 \end{figure}
 
