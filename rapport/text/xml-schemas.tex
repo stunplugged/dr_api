@@ -2,71 +2,118 @@ Som beskrevet i det foregående kapitel, så er der ikke i API'et ikke udstillet n
 
 Nogle af fordelene ved at anvende XML skema fremfor DTD er, at XML skema er meget mere kraftfuldt end DTD da XML skema eksempelvis understøtter datatyper og desuden er selve XML skemaer selv beskrevet med XML Syntax og derfor er relative lette at læse.
 
-\section{Beskrivelse af XML skema til all.xml}
+\section{Beskrivelse af XML skemaerne}
+Ved undersøgelse af XML dokumenterne fremgik det at begge XML dokumenter indeholder en sekvens af enten videoer eller programserier. Derfor består første del af begge de udarbejde XML skemaer af en sekvens af enten elementet ProgramSerieVideo eller elementet ProgramSerie, som kan forekomme uendeligt mange gange. Både elementet ProgramSerieVideo og ProgramSerie er oprettet som et complexType element, der består af hver sine beskrivende elementer, som fx Slug, Title, Description osv. Disse elementer som beskriver videoen eller programserien er blevet sat til at være af en bestemt type. Valget af type til elementerne er fremkommet dels af elements navn og elements indhold, som har givet et hint om hvilke type der er tale om.
 
-Skriv om anvendelse af sequence
-Skrive om valg af datatyper.
-Skriv om fx BroadcastChannel (findes kun i nogle programmer)
+Specielt skal det bemærkes at elementet \ele{BroadcastTime} i ”ProgramSerieVideo” er sat til at kunne forekommer i XML dokumentet med en null værdi (nillable). Det vil sige at en enkelt video kan have elementet ” BroadcastTime ” i sig, men uden nogen værdi. En anden speciel detalje er at elementet BroadcastChannel i ”ProgramSerieVideo”, er sat til at kunne undlades helt i en video. Dette gælder øvrigt også ShortName, WebCmsImagePath i skemaet til ProgramSeries.
+
+I skemaet til ProgramSeries er det også værd at bemærke element LabelsType, som er et complexType element, som indgår i et andet complexType element, nemlig elementet ProgramSerieType.  
 
 \begin{figure}[ht]
 %\centering
 \begin{lstlisting}[style=XML]
+<?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="ArrayOfProgramSerieVideo">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="ProgramSerieVideo" 
-				            maxOccurs="unbounded" />
+				<xs:element name="ProgramSerieVideo" 
+				            maxOccurs="unbounded"
+							type="ProgramSerieVideoType" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>	
-	<xs:element name="ProgramSerieVideo">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="Id" 					
-				            type="xs:nonNegativeInteger" />
-				<xs:element name="Description" 			
-				            type="xs:string" />
-				<xs:element name="ProgramSerieSlug" 	
-				            type="xs:string" />
-				<xs:element name="Title" 				
-				            type="xs:string" />
-				<xs:element name="Duration" 			
-				            type="xs:string" />
-				<xs:element name="BroadcastTime" 		
-				            type="xs:dateTime" 
-							nillable="true" />
-				<xs:element name="ExpireTime" 			
-				            type="xs:dateTime" />
-				<xs:element name="PublishTime" 			
-				            type="xs:dateTime" />
-				<xs:element name="Expired" 				
-				            type="xs:boolean" />
-				<xs:element name="BroadcastChannel" 
-				            type="xs:string" minOccurs="0" maxOccurs="1" />
-				<xs:element name="VideoManifestUrl" 	
-				            type="xs:anyURI" />
-				<xs:element name="VideoResourceUrl" 	
-				            type="xs:anyURI" />
-				<xs:element name="Premiere" 			
-				            type="xs:boolean" />
-				<xs:element name="BitrateKbps" 			
-				            type="xs:nonNegativeInteger" />
-				<xs:element name="Height" 				
-				            type="xs:nonNegativeInteger" />
-				<xs:element name="Width" 				
-				            type="xs:nonNegativeInteger" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+	<xs:complexType name="ProgramSerieVideoType">
+		<xs:sequence>
+			<xs:element name="Id" 					
+				        type="xs:nonNegativeInteger" />
+			<xs:element name="Description" 			
+				        type="xs:string" />
+			<xs:element name="ProgramSerieSlug" 	
+				        type="xs:string" />
+			<xs:element name="Title" 				
+				        type="xs:string" />
+			<xs:element name="Duration" 			
+				        type="xs:string" />
+			<xs:element name="BroadcastTime" 		
+				        type="xs:dateTime" 
+						nillable="true" />
+			<xs:element name="ExpireTime" 			
+				        type="xs:dateTime" />
+			<xs:element name="PublishTime" 			
+				        type="xs:dateTime" />
+			<xs:element name="Expired" 				
+				        type="xs:boolean" />
+			<xs:element name="BroadcastChannel" 	
+				        type="xs:string" 
+						minOccurs="0" 
+						maxOccurs="1" />
+			<xs:element name="VideoManifestUrl" 	
+				        type="xs:anyURI" />
+			<xs:element name="VideoResourceUrl" 	
+				        type="xs:anyURI" />
+			<xs:element name="Premiere" 			
+				        type="xs:boolean" />
+			<xs:element name="BitrateKbps" 			
+				        type="xs:nonNegativeInteger" />
+			<xs:element name="Height" 				
+				        type="xs:nonNegativeInteger" />
+			<xs:element name="Width" 				
+				        type="xs:nonNegativeInteger" />
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>
 \end{lstlisting}
 \caption{XML skema til dokumentet all.xml}
 \label{data:all_schema.xsd}
 \end{figure}
 
-TODO: Insert stuff about xml schemas
 
-Description of how we create them and the choice of types. 
+\begin{figure}[ht]
+%\centering
+\begin{lstlisting}[style=XML]
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ArrayOfProgramSerie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProgramSerie" maxOccurs="unbounded" type="ProgramSerieType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ProgramSerieType">
+		<xs:sequence>
+			<xs:element name="Slug" 			type="xs:string" />
+			<xs:element name="Title" 			type="xs:string" />
+			<xs:element name="Description" 		type="xs:string" />
+			<xs:element name="ShortName" 		type="xs:string" minOccurs="0" maxOccurs="1" />
+			<xs:element name="NewestVideoId"	type="xs:nonNegativeInteger" />
+			<xs:element name="NewestVideoPublishTime" type="xs:dateTime" />
+			<xs:element name="VideoCount"		type="xs:nonNegativeInteger" />
+			<xs:element name="Labels"			type="LabelsType" />
+			<xs:element name="WebCmsImagePath" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LabelsType">
+		<xs:sequence>		
+			<xs:element name="string"	type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>	
+	</xs:complexType>	
+</xs:schema>
+\end{lstlisting}
+\caption{XML skema til dokumentet programseries.xml}
+\label{data:programseries.xsd}
+\end{figure}
 
-XML validation testing.
+\section{Validering med XML skema}
+
+Valideringen af XML dokumenterne med XML skemaerne er test ved hjælp af BaseX, hvor validate:xsd er blevet anvendt. For at test XML skemaerne holder over tid, så er der igennem projektetsforløb blevet hentet nye versioner af XML dokumenterne, så også har bestået valideringstesten med de udarbejde XML skemaer. 
+
+\begin{figure}[ht]
+%\centering
+\begin{lstlisting}[style=FAKE_XQUERY, language=XQUERY]
+validate:xsd('all.xml', 'all_schema.xsd')
+\end{lstlisting}
+\caption{Funktionskald til validering af all.xml med skemaet all\_schema.xsd}
+\label{xschema: validering }
+\end{figure}
