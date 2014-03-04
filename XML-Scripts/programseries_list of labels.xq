@@ -3,12 +3,12 @@ declare namespace dr = "http://www.dr.dk";
 declare function dr:getProgramSeriesCategory
   ( $programseriesFileName as xs:string) as element()*{
     
-    let $progSerieLables := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels/string/text())
+    let $progSerieLabels := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels/string/text())
     return (
-      <countCategory>{count($progSerieLables)}</countCategory>,
+      <countCategory>{count($progSerieLabels)}</countCategory>,
       (
-      for $lable in $progSerieLables
-        return <category>{$lable}</category>
+      for $label in $progSerieLabels
+        return <category>{$label}</category>
       )
     )
 };
