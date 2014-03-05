@@ -1,4 +1,4 @@
-I det åbne API fra Danmarks Radio er der mange forskellige XML dokumenter til rådelighed. Nogle af XML dokumenter er forholdsvis små og indeholder kun en sti til en grafik, som fx kan anvendes i en grafisk brugerflade. Til dette projekt er der udvalgt 2 store XML dokumenter, som indeholder beskrivelser af de enkelte videoer og den programserie som de evt. er en del af.
+I det åbne API fra Danmarks Radio er der mange forskellige XML dokumenter til rådighed. Nogle af XML dokumenter er forholdsvis små og indeholder kun en sti til en grafik, som fx kan anvendes i en grafisk brugerflade. Til dette projekt er der udvalgt to store XML dokumenter, som indeholder beskrivelser af de enkelte videoer og den programserie som de evt. er en del af.
 
 XML dokumenterne er hentet fra nedenstående adresser og deres struktur og indhold beskrives i underafsnittene her under.
 \begin{itemize}
@@ -7,9 +7,9 @@ XML dokumenterne er hentet fra nedenstående adresser og deres struktur og indhol
 \end{itemize}
 
 \section{Beskrivelse af dokumentet all.xml}
-Dette XML dokument indeholder information om alle videoer som er tilgængelige via API’et. Strukturen af dette dokument kan betragtes som værende relativ flad, da dybde i strukturen er relativ lille. Strukturen består udelukkende består af rodelementet ArrayOfProgramSerieVideo, som indeholder elementer af ProgramSerieVideo for hver tilgængelig video der findes. Selve elementet ProgramSerieVideo indeholder en række elementer direkte under sig, som beskriver detaljerne omkring videoen. Disse detaljer er sidste niveau i strukturen, hvilket gør at dybde af strukturen kan betragtes som værende flad. Skulle dybde øges vil det fx være muligt ved at samle elementer som BitrateKbps, Height og Width under et nyt element, fx med navnet TechDetails. 
+Dette XML dokument indeholder information om alle videoer som er tilgængelige via API’et. Strukturen af dette dokument kan betragtes som værende relativ flad, da dybde i strukturen er relativ lille. Strukturen består udelukkende af rodelementet \ele{ArrayOfProgramSerieVideo}, som indeholder elementer af \ele{ProgramSerieVideo} for hver tilgængelig video der findes. Selve elementet \ele{ProgramSerieVideo} indeholder en række elementer direkte under sig, som beskriver detaljerne omkring videoen. Disse detaljer er sidste niveau i strukturen, hvilket gør at dybde af strukturen kan betragtes som værende flad. Skulle dybde øges vil det fx være muligt ved at samle elementer som \ele{BitrateKbps}, \ele{Height} og \ele{Width} under et nyt element, fx med navnet \ele{TechDetails}. 
 
-Omkring dokumentets indhold ses det at der er angivet en prolog, som fortæller at dokumentet er XML version 1 og er skrevet med tegnsæt UTF-8. Elementerne under elementet ProgramSerieVideo er ikke beskrevet yderligere i API’et fra Danmarks Radio, så de er i projektet fortolket på følgende måde:
+Omkring dokumentets indhold ses det at der er angivet en prolog, som fortæller at dokumentet er XML version 1.0 og er skrevet med tegnsæt UTF-8. Elementerne under elementet \ele{ProgramSerieVideo} er ikke beskrevet yderligere i API’et fra Danmarks Radio, så de er i projektet fortolket på følgende måde:
 \begin{itemize}
 \item \textbf{Id:} Et unikt id for hver video der findes tilgængelig.
 \item \textbf{Description:} En beskrivende tekst af hver video, som typisk anvendes i en tv-program-guide.
@@ -63,9 +63,9 @@ Omkring dokumentets indhold ses det at der er angivet en prolog, som fortæller a
 
 \section{Beskrivelse af dokumentet programseries.xml}
 
-Dette XML dokument indeholder information om alle serier af programmer, som er tilgængelige via API’et. Ved serier forstås programmer som er opdelt i mange afsnit. Strukturen af dette dokument er lidt dybere end dokumentet all.xml, men ellers er den overordnet struktur identisk. Rodelementet hedder nu ArrayOfProgramSerie og indeholder elementer af ProgramSerie, som beskriver detaljer omkring selve serien af det specifikke program. Der hvor dokumentet adskiller sig dybdemæssigt i forhold til dokumentet all.xml er i elementet Labels som kan indeholde en til mange elementer af String, som er en kategorisering af seriens emne.
+Dette XML dokument indeholder information om alle serier af programmer, som er tilgængelige via API’et. Ved serier forstås programmer som er opdelt i mange afsnit. Strukturen af dette dokument er lidt dybere end dokumentet all.xml, men ellers er den overordnet struktur identisk. Rodelementet hedder nu \ele{ArrayOfProgramSerie} og indeholder elementer af \ele{ProgramSerie}, som beskriver detaljer omkring selve serien af det specifikke program. Der hvor dokumentet adskiller sig dybdemæssigt i forhold til dokumentet all.xml er i elementet \ele{Labels} som kan indeholde en til mange elementer med navnet \ele{String}, som er en kategorisering af seriens emne.
 
-I dokumentets indhold ses en prolog, som er identisk for det forrige dokuments prolog. Igen er elementerne under elementet ProgramSerie ikke beskrevet yderligere i API’et fra Danmarks Radio, så de er i projektet fortolket på følgende måde:
+I dokumentets indhold ses en prolog, som er identisk for det forrige dokuments prolog. Igen er elementerne under elementet \ele{ProgramSerie} ikke beskrevet yderligere i API’et fra Danmarks Radio, så de er i projektet fortolket på følgende måde:
 
 \begin{itemize}
 \item \textbf{Slug:} Unik nøgle et den enkelte serie af programmer. Denne nøgle anvendes som en slags fremmenøgle i det forrige dokument (all.xml).
