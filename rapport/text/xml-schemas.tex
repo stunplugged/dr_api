@@ -1,13 +1,13 @@
-Som beskrevet i det foregående kapitel, så er der ikke i API'et ikke udstillet noget validerings-skema eller nogen indbygget DTD (Document Type Definition) til de XML dokumenter der er til rådighed. Den manglende mulighed for at validere XML dokumenterne betyder, at videoapplikation må stole på at XML dokumenterne altid overholder samme struktur. Ændres strukturen pludseligt vil det betyde at de søgefunktioner, som udarbejdes i dette projekt, ikke vil kunne fungere længere. Det er dermed sagt, at der kun gives garanti for at alle de funktioner, som udarbejdes i dette projekt kun kan anvendes såfremt at de XML dokumenter, som hentes fra Danmarks Radio's API, kan valideres imod de XML skemaer, som beskrives i dette kapitel. 
+Som beskrevet i det foregående kapitel, så er der ikke i API'et udstillet noget validerings-skema eller nogen indbygget DTD (Document Type Definition) til de XML dokumenter der er til rådighed. Den manglende mulighed for at validere XML dokumenterne betyder, at videoapplikation må stole på at XML dokumenterne altid overholder samme struktur. Ændres strukturen pludseligt vil det betyde at de søgefunktioner, som udarbejdes i dette projekt, ikke vil kunne fungere længere. Det er dermed sagt, at der kun gives garanti for at alle de funktioner, som udarbejdes i dette projekt kun kan anvendes såfremt at de XML dokumenter, som hentes fra Danmarks Radio's API, kan valideres imod de XML skemaer, som beskrives i dette kapitel. 
 
 Nogle af fordelene ved at anvende XML skema fremfor DTD er, at XML skema er meget mere kraftfuldt end DTD da XML skema eksempelvis understøtter datatyper og desuden er selve XML skemaer selv beskrevet med XML Syntax og derfor er relative lette at læse.
 
 \section{Beskrivelse af XML skemaerne}
-Ved undersøgelse af XML dokumenterne fremgik det at begge XML dokumenter indeholder en sekvens af enten videoer eller programserier. Derfor består første del af begge de udarbejde XML skemaer af en sekvens af enten elementet ProgramSerieVideo eller elementet ProgramSerie, som kan forekomme uendeligt mange gange. Både elementet ProgramSerieVideo og ProgramSerie er oprettet som et complexType element, der består af hver sine beskrivende elementer, som fx Slug, Title, Description osv. Disse elementer som beskriver videoen eller programserien er blevet sat til at være af en bestemt type. Valget af type til elementerne er fremkommet dels af elements navn og elements indhold, som har givet et hint om hvilke type der er tale om.
+Ved undersøgelse af XML dokumenterne fremgik det at begge XML dokumenter indeholder en sekvens af enten videoer eller programserier. Derfor består første del af begge de udarbejde XML skemaer af en sekvens af enten elementet ProgramSerieVideo eller elementet ProgramSerie, som kan forekomme uendeligt mange gange. Både elementet \ele{ProgramSerieVideo} og \ele{ProgramSerie} er oprettet som et complexType element, der består af hver sine beskrivende elementer, som fx \ele{Slug}, \ele{Title}, \ele{Description} osv. Disse elementer som beskriver videoen eller programserien er blevet sat til at være af en bestemt type. Valget af type til elementerne er fremkommet dels af elements navn og elements indhold, som har givet et hint om hvilke type der er tale om.
 
-Specielt skal det bemærkes at elementet \ele{BroadcastTime} i ”ProgramSerieVideo” er sat til at kunne forekommer i XML dokumentet med en null værdi (nillable). Det vil sige at en enkelt video kan have elementet ” BroadcastTime ” i sig, men uden nogen værdi. En anden speciel detalje er at elementet BroadcastChannel i ”ProgramSerieVideo”, er sat til at kunne undlades helt i en video. Dette gælder øvrigt også ShortName, WebCmsImagePath i skemaet til ProgramSeries.
+Specielt skal det bemærkes at elementet \ele{BroadcastTime} i \ele{ProgramSerieVideo} er sat til at kunne forekommer i XML dokumentet med en null værdi (nillable). Det vil sige at en enkelt video kan have elementet \ele{BroadcastTime} i sig, men uden nogen værdi. En anden speciel detalje er at elementet \ele{BroadcastChannel} i \ele{ProgramSerieVideo}, er sat til at kunne undlades helt i en video. Dette gælder øvrigt også ShortName, WebCmsImagePath i skemaet til ProgramSeries.
 
-I skemaet til ProgramSeries er det også værd at bemærke element LabelsType, som er et complexType element, som indgår i et andet complexType element, nemlig elementet ProgramSerieType.  
+I skemaet til programseries.xml er det også værd at bemærke element \ele{LabelsType}, som er et complexType element, som indgår i et andet complexType element, nemlig elementet \ele{ProgramSerieType}.  
 
 \begin{figure}[ht]
 %\centering
@@ -107,7 +107,7 @@ I skemaet til ProgramSeries er det også værd at bemærke element LabelsType, som 
 
 \section{Validering med XML skema}
 
-Valideringen af XML dokumenterne med XML skemaerne er test ved hjælp af BaseX, hvor validate:xsd er blevet anvendt. For at test XML skemaerne holder over tid, så er der igennem projektetsforløb blevet hentet nye versioner af XML dokumenterne, så også har bestået valideringstesten med de udarbejde XML skemaer. 
+Valideringen af XML dokumenterne med XML skemaerne er test ved hjælp af BaseX, som det ses i figur \ref{xschema:validering}, hvor validate:xsd er blevet anvendt. For at teste at XML skemaerne holder over tid, så er der igennem projektets forløb blevet hentet nye versioner af XML dokumenterne, som også har bestået valideringstesten med de udarbejde XML skemaer. 
 
 \begin{figure}[ht]
 %\centering
@@ -115,5 +115,5 @@ Valideringen af XML dokumenterne med XML skemaerne er test ved hjælp af BaseX, h
 validate:xsd('all.xml', 'all_schema.xsd')
 \end{lstlisting}
 \caption{Funktionskald til validering af all.xml med skemaet all\_schema.xsd}
-\label{xschema: validering }
+\label{xschema:validering}
 \end{figure}
