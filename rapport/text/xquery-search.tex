@@ -9,8 +9,8 @@ Brugeren af videoapplikationen skal have muligheden for at navigere imellem de f
 declare function dr:getProgramSeriesCategory
   ( $programseriesFileName as xs:string) as element()*{
     
-    let $progSerieLabels := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels/
-    	string/text())
+    let $progSerieLabels := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/
+		Labels/string/text())
     return (
       <countCategory>{count($progSerieLabels)}</countCategory>,
       (
@@ -70,7 +70,7 @@ declare function dr:videosOfCategory
 
   let $programSeriesCategory := dr:programSeriesOfCategory($programseriesFileName, $category )
   return(
-    for $videoId in $programSeriesCategory//ProgramSerie/NewestVideoId/data()
+    for $videoId in $programSeriesCategory//ProgramSerie/NewestVideoId/text()
       return(
         let $programSerieVideo := doc($programseriesVideoFileName)//ProgramSerieVideo[Id = $videoId]
         return $programSerieVideo
@@ -87,7 +87,7 @@ declare function dr:videosOfCategory
 
 \section{Find alle videoer inden for et specifikt tidsinterval}
 
-Videoapplikationen skal have en søgefunktion, hvor brugeren kan finde alle de programserievideoer, hvor udsendelsestidspunktet ligger inden for et specifikt tidsinterval. XQuery funktionen er vist i figur \ref{xquerySearch:programSeriesVideoBroadcastDateInterval} og tager imod navnet af XML videofilen, start og stop tidspunktet, som argumenter til funktionen. En ”for lykke” læser tidsinformation i tagget \ele{BroadcastTime} af hvert element \ele{ProgramSerieVideo} og returnerer kun de \ele{ProgramSerieVideo} elementer, hvor udsendelsestidspunktet ligger inden for tidsintervallet. XQuery har to forskellige sammenligningsoperatorer, værdier sammenligningsoperatorer fx (le, ge) som er beregnet til at sammenligne enkelte værdier og generelle sammenligningsoperatorer fx (\textless=, =\textgreater) for at sammenligne sekvenser med flere værdier. I denne funktion blev der brugt den første variant fordi det kun er enkelte værdier som skal sammenlignes. Det er nødvendig at tage højde for at tagget \ele{BroadcastTime} kan være tomt. I denne situation vil cast fra null til xs:dateTime() giver en dynamisk fejl. XQuery er et funktionelt programmeringssprog og der medfølges at variabler er uforanderlige. Derfor bruges en hjælpefunktion, figur \ref{xquerySearch:getBroadCastTime} som kontrollerer om tagget er tomt og dermed returnere en dummy dato ("1900-01-01T00:00:00") ellers den fundende dato, til at opdatere den interne variabel \$broadCastTime.
+Videoapplikationen skal have en søgefunktion, hvor brugeren kan finde alle de programserievideoer, hvor udsendelsestidspunktet ligger inden for et specifikt tidsinterval. XQuery funktionen er vist i figur \ref{xquerySearch:programSeriesVideoBroadcastDateInterval} og tager imod navnet af XML videofilen, start og stop tidspunktet, som argumenter til funktionen. En ”for lykke” læser tidsinformation i tagget \ele{BroadcastTime} af hvert element \ele{ProgramSerieVideo} og returnerer kun de \ele{ProgramSerieVideo} elementer, hvor udsendelsestidspunktet ligger inden for tidsintervallet. XQuery har to forskellige sammenligningsoperatorer, værdier sammenligningsoperatorer fx (le, ge) som er beregnet til at sammenligne enkelte værdier og generelle sammenligningsoperatorer fx (\textless=, =\textgreater) for at sammenligne sekvenser med flere værdier. I denne funktion blev der brugt den første variant fordi det kun er enkelte værdier som skal sammenlignes. Det er nødvendig at tage højde for at tagget \ele{BroadcastTime} kan være tomt. I denne situation vil cast fra null til xs:dateTime() giver en dynamisk fejl. Til at afhjælpe dette problem bruges der en hjælpefunktion, figur \ref{xquerySearch:getBroadCastTime} som kontrollerer om tagget er tomt og dermed returnere en dummy dato ("1900-01-01T00:00:00") ellers den fundende dato, til at opdatere den interne variabel \$broadCastTime.
 
 \begin{figure}[ht]
 %\centering
@@ -114,10 +114,10 @@ declare function dr:programSeriesVideoBroadcastDateInterval
 
 declare function dr:getBroadCastTime
 ($broadCastTimeElement as element() ) as xs:dateTime{
-  if( not($broadCastTimeElement/data()) ) then (
+  if( not($broadCastTimeElement/text()) ) then (
        (xs:dateTime("1900-01-01T00:00:00"))
     ) else (
-      (xs:dateTime($broadCastTimeElement/data()))
+      (xs:dateTime($broadCastTimeElement/text()))
     ) 
 };
 
