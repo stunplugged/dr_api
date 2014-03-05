@@ -1,21 +1,23 @@
-I videoapplikation vil der være behov for at kunne søge efter videoer eller programserier ud fra specifikke ord, som kan være en del af titlen eller fx beskrivelsen, som er den del der indeholder med tekst.  
+I videoapplikation vil der være behov for at kunne søge efter videoer eller programserier ud fra specifikke ord, som kan være en del af titlen eller fx beskrivelsen, som er den del der indeholder mest tekst.  
 
 \section{Oprettelse af full text index}
 
-I BaseX databasen er det muligt at oprette et full text index til sin XML database. Index’et vil bliver oprettet på indhold af alle elementer i XML doukmentet og ikke kun på et specifikt element i dokumentet. Sammenlignes dette med en relationel database vil det svare til at index’et ikke kun oprettes på en specefik kolonne i en specifik tabel, men alle kolonner i alle tabeller i databasen. 
+I BaseX databasen er det muligt at oprette et "full-text index" til sin XML database. Index’et vil bliver oprettet på indhold af alle elementer i XML doukmentet og ikke kun på et specifikt element i dokumentet. Sammenlignes dette med en relationel database vil det svare til at index’et ikke kun oprettes på en specefik kolonne i en specifik tabel, men på data i alle kolonner i alle tabeller i databasen. 
 
-\subsection{Indstillinger til full text index}
+\subsection{Indstillinger til full-text index}
 
-Ved oprettelsen af index’et skal sproget angives, ellers sættes det default til engelsk. I denne videoapplikation vil sproget være dansk og det få stor betydning når det teksterne i databasen udsættes for ”Stemming” . Stemming er en slags ordbog. som kan reducere ord ned til deres mindste form. Det vil fx sige at et ord som ”Bilerne” vil blive til ”bil” før det gemmes som en værdi i index’et.  
+Ved oprettelsen af index’et skal sproget angives, ellers sættes det default til engelsk. I denne videoapplikation vil sproget være dansk og det får stor betydning når teksterne i databasen udsættes for ”Stemming” . Stemming er en proces, som reducere ord ned til deres mindste form. Det vil fx sige at et ord som ”Bilerne” vil blive til ”bil” før det gemmes som en værdi i index’et.  
 
 \section{Full text søgning}
 
-Det skal i videoapplikationen være muligt at søge efter specifikke ord inden for en specifik kategori af programserier. Det vil sige at full text søgning skal kombineres med en XQuery, hvor kun elementer, som indgår i den efterspurgte kategori af programserier med tages og kun returneres som resultat hvis de også kan opfylde full text søgningen.
+Det skal i videoapplikationen være muligt at søge efter specifikke ord inden for en specifik kategori af programserier. Det vil sige at full-text søgning skal kombineres med en XQuery, hvor kun elementer, som indgår i den efterspurgte kategori af programserier medtages og kun returneres som resultat, hvis de også kan opfylde full-text søgningen. 
+Denne søgning ses i figur \ref{fulltextSearch:programserierLivsstilOrd}.
 
 \begin{figure}[ht]
 %\centering
 \begin{lstlisting}[style=FAKE_XQUERY, language=XQUERY]
-//ArrayOfProgramSerie/ProgramSerie/Labels[string='livsstil']/../Description[ft:contains(text(), ("restaurant", "laks"), { "mode": "any" })]/..
+//ArrayOfProgramSerie/ProgramSerie/Labels[string='livsstil']/..
+         /Description[ft:contains(text(), ("restaurant", "laks"), { "mode": "any" })]/..
 \end{lstlisting}
 \caption{Implementationen af søgning efter specifik kategori af programserier med specifikke ord som indhold.}
 \label{fulltextSearch:programserierLivsstilOrd}
@@ -23,8 +25,10 @@ Det skal i videoapplikationen være muligt at søge efter specifikke ord inden for
 
 \section{En sky af ord}
 
-Til videoapplikationen ønskes en flot baggrundsbillede, som består af en sky af de mest brugte ord i alle elementerne som beskriver programserierne. Til at skabe sådan et billede skal full text index’et undersøges. Indholdet skal tages ud i en rækkefølge hvor de mest brugte ord kommer først.
+Til videoapplikationen ønskes et flot baggrundsbillede, som består af en sky af de mest brugte ord i alle elementerne, som beskriver programserierne. Til at skabe sådan et billede skal full-text index’et undersøges. 
+Indholdet skal tages ud i en rækkefølge hvor de mest brugte ord kommer først og hvor der med hvert ord følger et tal, som beskriver hvor mange gange ordet er anvendt.
 
 \subsection{Tilføjelse af stop words}
 
-Da ikke alle ord er lige interesant at have med i index’et, så er det muligt at oprette en stop words list, som indeholder alle de ord som skal undtages når full text index’et oprettes.
+Da ikke alle ord er lige interesant at have med i index’et, så er det muligt at oprette en "stop words list", som indeholder alle de ord, som skal undtages når et full-text index’et oprettes. 
+I dette projekt er denne "stop word list" blevet oprettet ved at gennemse de meste brugte ord i index'et uden "stop words" og derefter tilføje dem til listen, som ikke giver mening i et full-text index.
