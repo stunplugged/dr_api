@@ -1,6 +1,6 @@
 
 \section{Find alle kategorierne til programserierne}
-Brugeren af videoapplikationen skal have muligheden for at navigere imellem de forskellige programserieres kategorier, som der findes på et givent tidspunkt. Funktionen i figur \ref{xquerySearch:getProgramSeriesCategory} bruger et XPath udryk til at finde alle kategori navnene i XML dokumentet og funktionen distinct-value() selekterer kun unik navne. En ”for lykke” returnerer kategorinavne som et element, \ele{category}, og derudover returnerer funktionen getProgramSeriesCategory() et element, \ele{countCategory}, med antal af forskellige kategorier. 
+Brugeren af videoapplikationen skal have mulighed for at navigere i mellem de forskellige programserier kategorier, som de findes på et givent tidspunkt. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} bruger et XPath udryk for at finde alle kategori navner i XML dokumentet og den i XQuery indbyged funktion distinct-value() selekterer kun unikne navne. En ”for lykke” returnerer kategorinavne som et element, \ele{category}, og derudover returnerer funktionen getProgramSeriesCategory() et element, \ele{countCategory}, med antal af forskellige kategorier. 
 
 \begin{figure}[ht]
 %\centering
@@ -9,7 +9,8 @@ Brugeren af videoapplikationen skal have muligheden for at navigere imellem de f
 declare function dr:getProgramSeriesCategory
   ( $programseriesFileName as xs:string) as element()*{
     
-    let $progSerieLabels := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/ProgramSerie/Labels/
+    let $progSerieLabels := distinct-values(doc($programseriesFileName)/ArrayOfProgramSerie/
+    	ProgramSerie/Labels/
     	string/text())
     return (
       <countCategory>{count($progSerieLabels)}</countCategory>,
@@ -27,7 +28,7 @@ declare function dr:getProgramSeriesCategory
 
 
 \section{Find antal programserier i en kategori}
-Når en bruger vælger en kategori skal videoapplikationen vise antallet af programserier i kategorien og forskellige informationer om disse. I funktionen \ref{xquerySearch:programSeriesOfCategory} finder XPath udtrykket alle \ele{ProgramSerie} elementer, hvor elementet \ele{string} i elementet \ele{Labels} har den sammen værdi som den valgte kategori. Variablen \$progSeries indeholder en sekvens med alle fundende \ele{ProgramSerie} elementer og ikke kun elementet \ele{Labels} fordi /.. ved slutning af sekvensen vælger forældre elementet, som er \ele{ProgramSerie}.  XQuery funktionen count() tæller antallet af fundende \ele{ProgramSerie} elementer. Denne information og alle de fundende \ele{ProgramSerie} elementer bliver returneret i elementet \ele{programSeriesCategory}.
+Når en bruger vælger en kategori skal videoapplikationen vise antallet af programserier i kategorien og forskellige informationer om disse. I funktionen \ref{xquerySearch:programSeriesOfCategory} finder XPath udtrykket alle \ele{ProgramSerie} elementer, hvor elementet \ele{string} i elementet \ele{Labels} har den sammen værdi som den valg kategori. Variablen \$progSeries indeholder en sekvens med alle fundende \ele{ProgramSerie} elementer og ikke kun elementet \ele{Labels} fordi /.. ved slutning af sekvensen vælger forældre elementet, som er \ele{ProgramSerie}.  XQuery funktionen count() tæller antallet af fundende \ele{ProgramSerie} elementer. Denne information og alle de fundende \ele{ProgramSerie} elementer bliver returneret i elementet \ele{programSeriesCategory}.
 
 \begin{figure}[ht]
 %\centering
