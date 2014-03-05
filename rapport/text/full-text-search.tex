@@ -27,8 +27,25 @@ Denne søgning ses i figur \ref{fulltextSearch:programserierLivsstilOrd}.
 
 Til videoapplikationen ønskes et flot baggrundsbillede, som består af en sky af de mest brugte ord i alle elementerne, som beskriver programserierne. Til at skabe sådan et billede skal full-text index’et undersøges. 
 Indholdet skal tages ud i en rækkefølge hvor de mest brugte ord kommer først og hvor der med hvert ord følger et tal, som beskriver hvor mange gange ordet er anvendt.
+I figur \ref{fulltext:beforeStopWords} se et eksempel på hvordan det kommer til at se ud når der dannes et billede af ordene i index'et. 
+Billedet i figuren illustrere dog også et lille problem, da ordene er simple ord som "og", "der", "at" osv. Dette løses ved at indføre en "stop word list".
+
+\begin{figure}[ht]
+  \centering
+   \includegraphics[width=1.1\textwidth]{pic/wordcloud1b.png}
+   \caption{Eksempel på billede før indførelse af "stop word list".}
+   \label{fulltext:beforeStopWords}
+\end{figure}
 
 \subsection{Tilføjelse af stop words}
 
 Da ikke alle ord er lige interesant at have med i index’et, så er det muligt at oprette en "stop words list", som indeholder alle de ord, som skal undtages når et full-text index’et oprettes. 
 I dette projekt er denne "stop word list" blevet oprettet ved at gennemse de meste brugte ord i index'et uden "stop words" og derefter tilføje dem til listen, som ikke giver mening i et full-text index.
+I figur \ref{fulltext:afterStopWords} ses nu hvordan udvalget af ord er blevet bedre.
+
+\begin{figure}[ht]
+  \centering
+   \includegraphics[width=1.1\textwidth]{pic/wordcloud2c.png}
+   \caption{Eksempel på billede efter indførelse af "stop word list".}
+   \label{fulltext:afterStopWords}
+\end{figure}
