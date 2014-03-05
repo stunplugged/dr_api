@@ -1,8 +1,6 @@
 
 \section{Find alle kategorierne til programserierne}
-Brugeren af videoapplikationen skal have muligheden for at navigere igennem de forskellige 
-programseries kategorierne der findes på tidspunktet. Funktionen i Figur \ref{xquerySearch:getProgramSeriesCategory} bruger en XPath udryk til at finde alle kategori navne i filen og funktionen distinct-value() selekterer kun unik navne. En for lykke returnerer kategorinavne som element med tag \ele{category} og udover returnerer funktionen getProgramSeriesCategory() et element, \ele{countCategory}, med antal af forskellige kategorier. 
-
+Brugeren af videoapplikationen skal have muligheden for at navigere imellem de forskellige programserieres kategorier, som der findes på et givent tidspunkt. Funktionen i figur \ref{xquerySearch:getProgramSeriesCategory} bruger et XPath udryk til at finde alle kategori navnene i XML dokumentet og funktionen distinct-value() selekterer kun unik navne. En ”for lykke” returnerer kategorinavne som et element, \ele{category}, og derudover returnerer funktionen getProgramSeriesCategory() et element, \ele{countCategory}, med antal af forskellige kategorier. 
 
 \begin{figure}[ht]
 %\centering
@@ -23,13 +21,13 @@ declare function dr:getProgramSeriesCategory
 };
 
 \end{lstlisting}
-\caption{Funktion til at finde navn af programserierne og samlet antal.}
+\caption{Funktion til at finde kategorinavne og samlet antal af kategorier.}
 \label{xquerySearch:getProgramSeriesCategory}
 \end{figure}
 
 
-\section{Find antal programserier pr. kategori}
-Når en bruger vægler et kategoriet skal videoapplikationen viser antallet af programserier i kategoriet og forskellige informationer om de. I funktionen \ref{xquerySearch:programSeriesOfCategory} finder den XPath udryk alle ProgramSerie elementer hvor element \ele{string} i element \ele{Labels} har den sammen værdi som det valgte kategori. Variablen \$progSeries holder en sekvens med alle fundet ProgramSerie elementer og ikke kun elementet \ele{Labels} fordi /.. ved slutning af sekvensen vælger forældre elementet som er ProgramSerie. Den XQuery funktion count() taler antal af fundet ProgramSerie elementer. Denne information og alle de fundet ProgramSerie elementer bliver returneret i elementet \ele{programSeriesCategory}.
+\section{Find antal programserier i en kategori}
+Når en bruger vælger en kategori skal videoapplikationen vise antallet af programserier i kategorien og forskellige informationer om disse. I funktionen \ref{xquerySearch:programSeriesOfCategory} finder XPath udtrykket alle \ele{ProgramSerie} elementer, hvor elementet \ele{string} i elementet \ele{Labels} har den sammen værdi som den valgte kategori. Variablen \$progSeries indeholder en sekvens med alle fundende \ele{ProgramSerie} elementer og ikke kun elementet \ele{Labels} fordi /.. ved slutning af sekvensen vælger forældre elementet, som er \ele{ProgramSerie}.  XQuery funktionen count() tæller antallet af fundende \ele{ProgramSerie} elementer. Denne information og alle de fundende \ele{ProgramSerie} elementer bliver returneret i elementet \ele{programSeriesCategory}.
 
 \begin{figure}[ht]
 %\centering
@@ -53,16 +51,14 @@ declare function dr:programSeriesOfCategory
 };
 
 \end{lstlisting}
-\caption{Funktion til at finde alle programserierne af kategoriet og samlet antal.}
+\caption{Funktion til at finde antallet af programserier i en bestemt kategori.}
 \label{xquerySearch:programSeriesOfCategory}
 \end{figure}
 
+\section{Find nyeste videoer inden for en specifik kategori}
 
-
-\section{Find alle videoer med i en specifik kategori}
-
-For at præsenterer detaljeret video informationer når en bruger har valgt et kategoriet er det nødvendig at hende denne information fra xml dokumentet. Video informationer ligger ikke i det sammen xml dokument hvor informationen om programserie og kategorier er gemmt. I denne eksempel findes kategori informationer i filen programseries.xml og video informationen i filen all.xml. En unik video ID som hedder \ele{NewestVideoId} i filen programseries.xml og \ele{Id} i filen all.xml referencerer fra et programserie element til en ProgramSerieVideo element. Her vises sig en svaghed af XML som ikke har nogle constrains på data indholdet (f.eks. uniknes) og referencering mellem elementerne. Faktisk er der ingen information i begge to XML dokumenterne ellers XML skemaer som dokumenterer denne reference mellem begge to tags.
-Til søgning after alle programserier i en specifik kategori eksisterer allerede en funktion og hedder programSeriesOfCategory() og er vist i Figur \ref{xquerySearch:programSeriesOfCategory}. Denne funktion blev kald i funktionen videosOfCategory() i Figur \ref(xquerySearch:videosOfCategory). Den resulterende sekvens indholder alle fundet programserie elementer som igen har den søgte tag \ele{NewestVideoId}. En for lykke behandler de programserie elementer og en XPath udryk selekterer kun den unik video ID som blev gemt i en variable \$videoId. I den samme for lykke bliver \$videoId brugt som en argument i en anden XPath søgning, men denne gang i video XML filen. Resultatet af søgning er programserie video informationer og bliver returneret af funktionen.
+For at videoapplikationen kan præsentere detaljeret videoinformationer og de nyeste videoer, når en bruger har valgt en kategori, er det nødvendigt at hente information fra XML dokumentet all.xml. Informationerne om de enkelte videoer ligger altså ikke i det sammen XML dokument, hvor informationen om programserierne og kategorier er gemt. I dette tilfælde findes kategori informationer i dokumentet programseries.xml og videoinformationen i dokumentet all.xml. Et unikt video- ID som hedder \ele{NewestVideoId} i dokumentet programseries.xml og \ele{Id} i dokumentet all.xml referere fra et specifikt \ele{programserie} element til et specifikt \ele{ProgramSerieVideo} element. Her vises sig en svaghed ved XML som ikke har nogle begrænsninger på dataindholdet (fx unik) og fremmenøgle referencer mellem elementerne. Faktisk er der ingen information i de to XML dokumenter eller deres XML skemaer, som dokumenterer denne reference imellem elementerne i de to dokumenter.
+Til søgning efter alle programserier i en specifik kategori eksisterer der allerede en funktion som hedder programSeriesOfCategory() som er vist i figur \ref{xquerySearch:programSeriesOfCategory}. Denne funktion blev kaldt i funktionen videosOfCategory() i figur \ref{xquerySearch:videosOfCategory}. Den resulterende sekvens indeholder alle fundende \ele{programserie} elementer, som igen har det søgte tag \ele{NewestVideoId}. En ”for lykke” behandler elementerne \ele{programserie} og et XPath udtryk selekterer kun det unik video ID, som blev gemt i variabelen \$videoId. I den samme ”for lykke” bliver \$videoId brugt som et argument i en anden XPath søgning, men denne gang i videodokumentet  all.xml. Resultatet af funktionens søgningen er elemeter af \ele{programSerieVideo} med tilhørende detaljeret informationer.
 
 
 \begin{figure}[ht]
@@ -82,7 +78,7 @@ declare function dr:videosOfCategory
   )
 };
 \end{lstlisting}
-\caption{Funktion til at finde alle videoer i en specifik kategoriet.}
+\caption{Funktion til at finde nyeste videoer inden for en specifik kategori.}
 \label{xquerySearch:videosOfCategory}
 \end{figure}
 
@@ -91,8 +87,7 @@ declare function dr:videosOfCategory
 
 \section{Find alle videoer inden for et specifikt tidsinterval}
 
-Videoapplikationen skal have en søgefunktion hvor brugeren kan finde programserievideoer hvor udsendelse tidspunkt ligger inden for et specifikt tidsinterval. XQuery funktionen er vist i Figur \ref{xquerySearch:programSeriesVideoBroadcastDateInterval} og tager navnet af XML video filen, start og stop tidspunktet som argument. En for lykke læser tidsinformation i tagget \ele{BroadcastTime} af hvert element ProgramSerieVideo og returnerer kun de ProgramSerieVideo elementer hvor udsendelse tidspunktet ligger inden for tidsintervallet. XQuery har to forskellige sammenligningsoperatorer, værdier sammenligningsoperatorer (f.eks. le, ge) som er beregnet til at sammenligne enkelte værdi og generelte sammenligningsoperatorer (f.eks. \textless=, =\textgreater) for at sammenligne sekvenser med flere værdier. I denne funktion blev brugt de første variant fordi der er kun enkelte værdier som skal sammenlignes. Det er nødvendig at tage højde for at tagget \ele{BroadcastTime} kan være tomt. I denne situation vil cast fra null til xs:dateTime() giver en dynamisk fejl. XQuery er et funktionelt programmeringssprog og der medfølges at variabler er uforanderlig. Derfor bruges en hjælpefunktion, Figur \ref{xquerySearch:getBroadCastTime} som kontrollerer når tagget er tomt og dermed returnere en dummy date ("1900-01-01T00:00:00") ellers den fundet date, til at opdatere den interne variable \$broadCastTime.
-
+Videoapplikationen skal have en søgefunktion, hvor brugeren kan finde alle de programserievideoer, hvor udsendelsestidspunktet ligger inden for et specifikt tidsinterval. XQuery funktionen er vist i figur \ref{xquerySearch:programSeriesVideoBroadcastDateInterval} og tager imod navnet af XML videofilen, start og stop tidspunktet, som argumenter til funktionen. En ”for lykke” læser tidsinformation i tagget \ele{BroadcastTime} af hvert element \ele{ProgramSerieVideo} og returnerer kun de \ele{ProgramSerieVideo} elementer, hvor udsendelsestidspunktet ligger inden for tidsintervallet. XQuery har to forskellige sammenligningsoperatorer, værdier sammenligningsoperatorer fx (le, ge) som er beregnet til at sammenligne enkelte værdier og generelle sammenligningsoperatorer fx (\textless=, =\textgreater) for at sammenligne sekvenser med flere værdier. I denne funktion blev der brugt den første variant fordi det kun er enkelte værdier som skal sammenlignes. Det er nødvendig at tage højde for at tagget \ele{BroadcastTime} kan være tomt. I denne situation vil cast fra null til xs:dateTime() giver en dynamisk fejl. XQuery er et funktionelt programmeringssprog og der medfølges at variabler er uforanderlige. Derfor bruges en hjælpefunktion, figur \ref{xquerySearch:getBroadCastTime} som kontrollerer om tagget er tomt og dermed returnere en dummy dato ("1900-01-01T00:00:00") ellers den fundende dato, til at opdatere den interne variabel \$broadCastTime.
 
 \begin{figure}[ht]
 %\centering
