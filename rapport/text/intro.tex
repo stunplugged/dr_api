@@ -2,6 +2,6 @@ Videoapplikationer som Netflix, Youbio og Viaplay er blevet meget populære i de 
 
 Som datakilde til dette projekt er der valgt et åbent API (Application Programming Interface) fra Danmarks Radio, som stiller stort set alt deres egenproducerede indhold tilgængeligt for brugeren/programmøren via adressen http://www.dr.dk/nu/api . Dette API giver fx mulighed for at hente en total oversigt over alle tilgængelige videoer, i et enkelt XML dokument, samt hente detaljer omkring specifikke videoer.
 
-I dette projekt hentes disse XML dokumenter ud via en standard webbrowser og gemmes lokalt, hvorefter de indlæses i en BaseX XML database, hvorfra der vil blive udarbejdet forskellige søgefunktioner til forespørgsler i XML dokumenterne.
+I dette projekt hentes disse XML dokumenter ud via en standard webbrowser og gemmes lokalt, hvorefter de indlæses i en BaseX XML database, hvorfra der vil blive udarbejdet forskellige søgefunktioner til forespørgsler i XML dokumenterne. Til sidst i projektet vil der også blive set på at udlæses og gemme informationerne fra et XML dokument, i en relationel database, som i dette projekt vil være PostgreSQL. Der vil ligeledes blive implementeret et par funktioner til, at hente dataene ud igen, fra den relationelle database og aflevere dem tilbage i form af XML.
 
 I øjeblikket findes der desværre ingen tilgængelig beskrivelse af struktur eller elementer i de tilgængelige XML dokumenter, så derfor starter projektet med en analyse af netop strukturen eller elementerne i de XML dokumenter som er udvalgt til dette projekt.
