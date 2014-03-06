@@ -2,8 +2,6 @@ I dette projekt kan det konkluderes at XML er et godt sprog til dataudveksling, 
 
 XML kommer derimod i problemer når der er tale om at holde på mange informationer med tilhørende relationer. Her tænkes fx på problemstillingen omkring alle programserier i et dokument, og alle informationer omkring de tilhørende videoer i et andet dokument. Dokumenterne kan uden problemer, indeholde alt informationen, men der findes igen metode ti l at sikre at relationerne imellem de to dokumenter rent faktisk er eksisterende. En video i XML dokumentet med detaljer om videoerne kan godt referere til en programserie i XML dokumentet omkring alle programserierne, men der er ikke nogen sikkerhed for programserien rent faktisk findes i dette dokument. Her savnes princippet med fremmenøgler fra den relationelle database. Til genglæde er XML et meget læsebart sprog for det menneskelige øje, hvor der kan hurtigt skabes et overblik over dataenes hierarkiske struktur, hvilket kan være meget vanskeligt når der ses på tabeller i en relationel database.
 
-Omkring XQuery, så konkluders det at syntaksen er noget speciel og uvant i forhold til andre sprog. Specielt blev det bemærket, at det ikke kan lade sig gøre at skrive en IF-sætning uden, at der skal med tages en ELSE, da denne er påkrævet også selvom den ikke skal have noget indhold.    
+Selvom XML har en svaghed omkring relationer imellem dokumenter, så styrkes XML af muligheden for at implementere et XML skema til validering af selve dokumentet indhold og struktur. Dette ses som en vigtig egenskab da et XML dokument, som ikke er validt, vil kunne skabe fejl under læsning, fx hvis en datatype ændre sig fra at være et tal til en tekst. 
 
-XML skema.( skal altid ske ved indlæsning) Dermed undgåes fejl (som dynamisk fejl) når data type ændres.
-
-Funktioner til oversigt og med specfik detajler til valg af video.
+Omkring XQuery, så konkluders det at syntaksen er noget speciel og uvant i forhold til andre sprog. Specielt blev det bemærket, at det ikke kan lade sig gøre at skrive en IF-sætning uden, at der skal med tages en ELSE, da denne er påkrævet også selvom den ikke skal have noget indhold. 
