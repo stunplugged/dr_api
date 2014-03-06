@@ -1,9 +1,9 @@
-﻿drop table if exists downloadeXML cascade;
+﻿drop table if exists downloadedXML cascade;
 drop table if exists slugLabel cascade;
 drop table if exists programSerie cascade;
 drop table if exists label cascade;
 
-create table downloadeXML
+create table downloadedXML
 (
 documentTitle			character(100),
 documentContent 		xml,
