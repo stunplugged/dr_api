@@ -36,13 +36,15 @@ BEGIN
 
   v_labels := (SELECT xpath('//ProgramSerie[Slug='''|| p_slug ||''']/Labels/string/text()', downloadedXML.documentContent) FROM downloadedXML);
 
-  FOR i IN array_lower(v_labels, 1) .. array_upper(v_labels, 1)
-  LOOP
-    SELECT labelNo INTO v_labelNo FROM label WHERE label.labelTxt = v_labels[i];
-    IF v_labelNo IS NOT NULL THEN
-      INSERT INTO slugLabel (programSerieNo, labelNo) VALUES(v_programSerieNo, v_labelNo);
-    END IF;
-  END LOOP;
+  IF array_lower(v_labels, 1) IS NOT NULL THEN
+    FOR i IN array_lower(v_labels, 1) .. array_upper(v_labels, 1)
+    LOOP
+      SELECT labelNo INTO v_labelNo FROM label WHERE label.labelTxt = v_labels[i];
+      IF v_labelNo IS NOT NULL THEN
+        INSERT INTO slugLabel (programSerieNo, labelNo) VALUES(v_programSerieNo, v_labelNo);
+      END IF;
+    END LOOP;
+  END IF;
   
   RETURN v_title;
 END;

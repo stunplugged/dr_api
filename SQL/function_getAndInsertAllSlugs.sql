@@ -20,5 +20,3 @@ BEGIN
 
 END;
 $$ LANGUAGE plpgsql;
-
-select getAndInsertAllSlugs();
