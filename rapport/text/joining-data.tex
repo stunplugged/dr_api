@@ -54,3 +54,6 @@ Funktionen til at identificer om der er ændringer til en specifik programserie, 
 I funktionen compareNodes() hentes de specikke programserier fra hver version af dokumentet, hvorefter funktionen compareElement() bliver anvendt til hvert element i programserien.
 
 Funktionen compareElement() sammenligner kun elementer med samme navn og tjekker at deres indhold er identisk. Kun hvis indholdet af det enkelte element er forskelligt returens et ny beskrivende element, som hedder \ele{changedContentProgramSerie}. Dette element indeholder attributten slug, som identificer selve programserien og attributten elementName, som identificer det element navn som har ændret sig. Desuden indeholder elementet \ele{changedContentProgramSerie} et element fra hver version af de oprindelige dokumenter (contentFile1 og contentFile2), således at det er muligt at se hvad der selve forskellen imellem de to versioner.   
+
+\section{Samling af funktioner i et modul}
+I XQuery er det muligt at samle sine funktioner i et modul. Alle de funktioner som tidligere er blevet beskrevet i projektet er nu samlet i filen dr\_api\_module.xqm og har fået sit eget namespace for at undgår navnkonflikter. Eksempelvis er modulet importeret i filen dr\_api\_module\_usage.xq med hjælp af en import instruktion.  
