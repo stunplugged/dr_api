@@ -7,15 +7,17 @@ DECLARE
 BEGIN
 	--RETURN QUERY SELECT *
 	
-	RETURN QUERY SELECT XMLElement( name "programseries",
+RETURN QUERY 
+	SELECT XMLRoot(
+		(SELECT XMLElement( name "programseries",
 		XMLAgg( XMLElement( name "programserie",
 				XMLElement( name "slug", ps.slug),
 				XMLElement( name "titel", ps.title),
 				XMLElement( name "description", ps.description),
 				XMLElement( name "newestvideoid", ps.newestvideoid),
 				XMLElement( name "newestvideopublishtime", ps.newestvideopublishtime)
-			)	
-		)
+				)	
+			)
 		)
 		
 	FROM programserie AS ps
@@ -28,7 +30,8 @@ BEGIN
 			FROM label as la
 			WHERE labeltxt = labelName
 		)
-	)selNo;
+	)selNo), VERSION '1.0', STANDALONE yes
+	);
 	
 END;
 $$
