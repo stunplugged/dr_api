@@ -1,12 +1,12 @@
-I dette kapitel undersøges hvordan funktioner til videoapplikationen ville se ud, hvis ikke skulle hente deres data fra et XML dokument men i stedet hente dataene direkte fra tabeller i en relationel database. Resultatet af et funktionskald skal dog stadig være i form af et resultatsæt beskrevet med XML.
+I dette kapitel undersøges hvordan funktioner til videoapplikationen ville se ud, hvis ikke skulle hente deres data fra et XML dokument, men i stedet hente dataene direkte fra tabeller i en relationel database. Resultatet af et funktionskald skal dog stadig være i form af et resultatsæt beskrevet med XML.
 
 Databasen som vil blive brugt i dette projekt er en PostgreSQL database og der arbejdes udelukkende med data fra XML dokumentet programseries.xml.
 
 \section{Design af tabeller}
 
-Første opgave er at designe nogle tabeller, som kan understøtte indholdet i XML dokumentet. Den første tabel, der skal bruges er en tabel til at holde på selve XML dokumentet i sin komplette tilstand.  Til det formål er tabellen ”downloadedXML” oprettet. Denne tabel indeholder to kolonner, en til navnet på XML dokumentet (docmentTitle) og en til selve indholdet af dokumentet (documentContent) som er af typen XML.
+Første opgave er at designe nogle tabeller, som kan understøtte indholdet i XML dokumentet. Den første tabel, der skal bruges er en tabel til at holde på selve XML dokumentet i sin komplette tilstand. Til det formål er tabellen ”downloadedXML” oprettet. Denne tabel indeholder to kolonner, en til navnet på XML dokumentet (docmentTitle) og en til selve indholdet af dokumentet (documentContent) som er af typen XML.
 
-Fra undersøgelsen af programseries.xml, tilbage i kapitel 2.2, er det allerede kendt at der findes en 0 til mange relation imellem en programserie og programseriens labels, altså kategorier. I figur \ref{postgresql:ER-diagram} ses et ER-diagram, som viser denne relation.  Derfor er der oprettet en tabel udelukkende til labels og en tabel udelukkende til indholdet af en programserie. Til at beskrive relationen, at en programserie har 0 til mange label’s og at label’s har 0 til mange programserier, så er der oprettet en tabel, som hedder slugLabel, der har en reference til label tabellen og en reference ti l programserie tabellen. Dermed en denne relation beskrevet i databasen og tabellerne er nu klar til at indlæst data i sig.
+Fra undersøgelsen af programseries.xml, tilbage i kapitel 2.2, er det allerede kendt at der findes en 0 til mange relation imellem en programserie og programserien's label's, altså kategorier. I figur \ref{postgresql:ER-diagram} ses et ER-diagram, som viser denne relation.  Derfor er der oprettet en tabel udelukkende til labels og en tabel udelukkende til indholdet af en programserier. Til at beskrive relationen, at en programserie har 0 til mange label’s og at label’s har 0 til mange programserier, så er der oprettet en tabel, som hedder slugLabel, der har en reference til label-tabellen og en reference til programserie-tabellen. Dermed er denne relation beskrevet i databasen og tabellerne er nu klar til at få indlæst data i sig.
 
 \begin{figure}[ht]
   \centering
@@ -17,7 +17,7 @@ Fra undersøgelsen af programseries.xml, tilbage i kapitel 2.2, er det allerede k
 
 \section{Oprettelse af label’s}
 
-Når XML dokumentet er indlæst i tabellen downloadedXML, så skal der som det første oprettes labels til alle de kategorier, som findes i dokumentet programseries.xml. Til dette formål er funktionen ” getAndInsertAllLabels()”, som ses i figur \ref{ code: getAndInsertAllLabels} skabt. Denne funktion benytter et XPath-udtryk til at finde alle tekster til labels og for hver tekst den finder, så undersøges det om der allerede er oprettet en label med den tekst, hvis ikke så indsættes denne nye label i tabellen. 
+Når XML dokumentet er indlæst i tabellen downloadedXML, så skal der som det første oprettes label's til alle de kategorier, som findes i dokumentet programseries.xml. Til dette formål er funktionen getAndInsertAllLabels(), som ses i figur \ref{code:getAndInsertAllLabels} skabt. Denne funktion benytter et XPath-udtryk til at finde alle tekster til label's og for hver tekst den finder, så undersøges det om der allerede er oprettet en label med denne tekst, hvis ikke, så indsættes denne nye label i tabellen. 
 
 \begin{figure}[h]
 \centering
@@ -33,12 +33,12 @@ Når XML dokumentet er indlæst i tabellen downloadedXML, så skal der som det førs
   END LOOP;
 \end{lstlisting}
 \caption{Udsnit af funktionen getAndInsertAllLabels()}
-\label{code: getAndInsertAllLabels }
+\label{code:getAndInsertAllLabels}
 \end{figure}
 
 \section{Oprettelse af programserier samt label relationer}
 
-For at identificere alle programserier, så er funktionen ”getAndInsertAllSlugs()” implementeret. Denne funktion finder med et XPath-udtryk alle programseriers \ele{slug} tag’s indhold og sender det videre til funktionen ”getAndInsertSlugsDetail()”, som har til opgave et hente detaljerne ud og oprette relationer imellem programserierne og deres eventuelle label’s. Denne funktion ses i figur \ref{code:getAndInsertSlugsDetail}
+For at identificere alle programserier, så er funktionen getAndInsertAllSlugs() implementeret. Denne funktion finder med et XPath-udtryk alle programseriers \ele{slug} tag’s indhold og sender det videre til funktionen getAndInsertSlugsDetail(), som har til opgave et hente detaljerne ud og oprette relationer imellem programserierne og deres eventuelle label’s. Denne funktion ses i figur \ref{code:getAndInsertSlugsDetail}.
 
 \begin{figure}[h]
 \centering
@@ -102,8 +102,8 @@ $$ LANGUAGE plpgsql;
 
 \section{Funktionen til at finde programserier med specifik label}
 
-Til videoapplikationen skal der som tidligere nævnt bruges en funktion, som kan give et resultatsæt af at programserier inden for en given kategori, altså med en specifik label. Til det formål er funktionen ”programseriesOfLabel()” implementeret som tager kategori navnet som argument og er vist i figur \ref{code:programseriesOfLabel}. Den efterspurgte information er fordelt på tre tabeller i PostgreSQL databasen og er: label, sluglabel og programserie.  
-I denne funktion blev der anvend en cross join imellem de tre tabeller med efterfølgende WHERE kondition for at finde alle programserie igennem deres programserieno som er registreret i tabellen sluglabel på den efterspurgte label. Resultatet skal returneres XML formateret og skal kun vise nogle attributer af programserie. De inbygged PostgreSQL funktioner XMLRoot(), XMLAgg() og XMLElement() blev brugt og genererer en velformet XML dokument med rødeelement \ele{programseries} som indeholder de fundet elementer af \ele{programserie}. XML dokumentet mangler et DTD eller XML skema og den tilhørende prolog for at blive en valid XML dokument.
+Til videoapplikationen skal der som tidligere nævnt bruges en funktion, som kan give et resultatsæt af programserier inden for en given kategori, altså med en specifik label. Til det formål er funktionen programseriesOfLabel() implementeret. Den tager kategori navnet som argument og er vist i figur \ref{code:programseriesOfLabel}. Den efterspurgte information er fordelt på tre tabeller i PostgreSQL databasen som er: label, sluglabel og programserie.  
+I denne funktion blev der anvendt et cross join imellem de tre tabeller med efterfølgende WHERE betingelse for at finde alle programserier igennem deres programserieno, som er registreret i tabellen sluglabel på den efterspurgte label. Resultatet skal returneres formateret som XML og skal kun vise nogle af kolonnerne fra programserie-tabellen. De indbyggede PostgreSQL funktioner XMLRoot(), XMLAgg() og XMLElement() blev brugt og genererer et velformet XML dokument med rodelement \ele{programseries}, som indeholder de fundende elementer af \ele{programserie}. XML dokumentet mangler en DTD eller et XML skema og den tilhørende prolog for at blive et valid XML dokument.
 
 \begin{figure}[h!]
 \centering
@@ -140,7 +140,7 @@ $$
 LANGUAGE plpgsql;
 
 \end{lstlisting}
-\caption{Funktionen for at finde programserier registreret under en specifik kategori}
+\caption{Funktionen til at finde programserier registreret under en specifik kategori.}
 \label{code:programseriesOfLabel}
 \end{figure}
 
@@ -148,7 +148,7 @@ LANGUAGE plpgsql;
 
 \section{Funktionen til at finde programserier i et tidsinterval}
 
-En yderlige funktion figur \ref{code:programseriesByPublishInterval} blev implementeret som gør det muligt at søge efter programserier som blev offentliggørd i et specifik tidsinterval. Ingen skal der returneres nogle attributer af de fundet programserier men denne gang sorteret med de nyste programserier først. En ORDER BY kommando sorterer de fundet programserier med hensyn til attributet newestvideopublishtime inden de bliver udgivet pakket ind i XML. Den aggregationsfunktion XMLAgg() og den ORDER BY i kerne forespørgsel resulterer i en yderlige SELECT statement og dermed dybere nested SQL funktion. Med hjælp af funktionen XMLRoot() returneres t velformet XML dokument. 
+En yderlige funktion figur \ref{code:programseriesByPublishInterval} blev implementeret, som gør det muligt at søge efter programserier, som blevet offentliggjort i et specifikt tidsinterval. Igen skal der returneres nogle kolonner af de fundet programserier, men denne gang sorteret med de nyeste programserier først. En ORDER BY kommando sorterer de fundet programserier med hensyn til kolonnen newestvideopublishtime inden de bliver udgivet pakket ind i XML. Aggregationsfunktionen XMLAgg() og ORDER BY i SQL-forespørgselen resulterer i en yderlige SELECT statement og dermed dybere nested SQL funktion. Med hjælp af funktionen XMLRoot() returneres et velformet XML dokument. 
 
 
 \begin{figure}[h!]
@@ -181,7 +181,7 @@ $$
 LANGUAGE plpgsql;
 
 \end{lstlisting}
-\caption{Funktionen for at finde programserier i et specifik interval}
+\caption{Funktionen til at finde programserier i et specifikt interval.}
 \label{code:programseriesByPublishInterval}
 \end{figure}
 
