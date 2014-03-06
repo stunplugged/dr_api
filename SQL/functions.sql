@@ -1,9 +1,8 @@
 DROP FUNCTION IF EXISTS getAndInsertAllLabels() CASCADE;
 DROP FUNCTION IF EXISTS getAndInsertAllSlugs() CASCADE;
-DROP FUNCTION IF EXISTS getAndInsertSlugsDetail() CASCADE;
+DROP FUNCTION IF EXISTS getAndInsertSlugsDetail(p_slug VARCHAR) CASCADE;
 DROP FUNCTION IF EXISTS programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) CASCADE;
 DROP FUNCTION IF EXISTS programseriesOfLabel(character(50)) CASCADE;
-
 
 
 
