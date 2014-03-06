@@ -20,17 +20,11 @@ RETURN QUERY
 			)
 		)
 		
-	FROM programserie AS ps
-	NATURAL JOIN
-	(
-		SELECT sla.programserieno
-		FROM sluglabel AS sla
-		WHERE  sla.labelno = (
-			SELECT la.labelno
-			FROM label as la
-			WHERE labeltxt = labelName
-		)
-	)selNo), VERSION '1.0', STANDALONE yes
+	FROM   programserie ps, sluglabel sla, label la
+	WHERE  la.labeltxt = labelName
+	AND    sla.labelno = la.labelno
+	AND    sla.programserieno = ps.programserieno
+	), VERSION '1.0', STANDALONE yes
 	);
 	
 END;
@@ -38,4 +32,5 @@ $$
 LANGUAGE plpgsql;
 
 
-
+--SELECT *
+--FROM fct_programseriesOfLabel('kultur');
