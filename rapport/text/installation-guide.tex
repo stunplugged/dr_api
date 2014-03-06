@@ -4,9 +4,9 @@
 \subsubsection{XML data dokuments}
 
 \begin{itemize}
-\item \textbf{all.xml} Video (Ã¦ldre version) Indholder detaljeret information om alle videoer.
+\item \textbf{all.xml} Video (ældre version) Indholder detaljeret information om alle videoer.
 \item \textbf{all\_new.xml} Video (nyere version)
-\item \textbf{programseries.xml} Programserie (Ã¦ldre version) med informationer om alle tilgÃ¦ngelige serier.
+\item \textbf{programseries.xml} Programserie (ældre version) med informationer om alle tilgængelige serier.
 \item \textbf{programseries\_new.xml} Programserie (nyere version)
 \end{itemize}
 
@@ -20,14 +20,14 @@
 \end{itemize}
 
 
-\subsubsection{XQuery og XPath forespÃ¸rgsler}
+\subsubsection{XQuery og XPath forespørgsler}
 
 \begin{itemize}
-\item \textbf{dr\_api\_module.xqm} XQuery modul med de meste af forespÃ¸rgsler
+\item \textbf{dr\_api\_module.xqm} XQuery modul med de meste af forespørgsler
 \item \textbf{dr\_api\_module\_usage.xq} Eksempel som viser hvordan modulen dr\_api\_module.xqm bruges.
-\item \textbf{word\_cloud\_search.xq} ForespÃ¸rgsel til ord sky funktionen.
-\item \textbf{text\_search-Restaurant-laks.xq} Full text sÃ¸gning in programserie.
-\item \textbf{ful-text-search-SCORE-Restaurant-laks.xq} Full text sÃ¸gning in programserie med score information.
+\item \textbf{word\_cloud\_search.xq} Forespørgsel til ord sky funktionen.
+\item \textbf{text\_search-Restaurant-laks.xq} Full text søgning in programserie.
+\item \textbf{ful-text-search-SCORE-Restaurant-laks.xq} Full text søgning in programserie med score information.
 
 \end{itemize}
 
@@ -35,7 +35,7 @@
 \subsubsection{Supplerende filer}
 
 \begin{itemize}
-\item{stop-words.txt} List med brugte stop ord til full text sÃ¸gning.
+\item{stop-words.txt} List med brugte stop ord til full text søgning.
 \end{itemize}
 
 
@@ -43,7 +43,7 @@
 \subsection{BaseX konfiguration}
 I projektet blev brugt BaseX 7.8.1.
 
-Opret en ny database i BaseX med \textit{Database - New} kommando for hver fil, programseries.xml, programseries\_new.xml, all.xml og all\_new.xml. Det er vigtigt at i den \textit{Create Database} menu under \textit{Indexes} den Full-Text Index blev aktiveret, sprog dansk og stop-word.txt filen bliver valgt som vist pÃ¥ figur \ref{inst:BaseXIndex}.
+Opret en ny database i BaseX med \textit{Database - New} kommando for hver fil, programseries.xml, programseries\_new.xml, all.xml og all\_new.xml. Det er vigtigt at i den \textit{Create Database} menu under \textit{Indexes} den Full-Text Index blev aktiveret, sprog dansk og stop-word.txt filen bliver valgt som vist på figur \ref{inst:BaseXIndex}.
 
 \begin{figure}[h!]
   \centering
