@@ -1,7 +1,13 @@
-TODO: Insert stuff about xml in postgresql
+I dette kapitel undesøges hvordan funktioner til videoapplikationen ville se ud hvis de skulle hente deres data direkte fra tabeller og ikke fra en XML dokument.
 
-Importing xml into PostgreSQL
+Funktionernes restultet vil dog stadig være i form af et resultatsæt beskrevet med XML.
 
-Adding full-text search 
+\section{Design af tabeller}
+I figur \ref{postgresql:ER-diagram} ses ER-diagrammet. 
 
-Compare full text performance between BaseX and PostgreSQL
+\begin{figure}[ht]
+  \centering
+   \includegraphics[width=1.1\textwidth]{pic/ER_programserie.png}
+   \caption{ER-diagram over tabel-design.}
+   \label{postgresql:ER-diagram}
+\end{figure}
