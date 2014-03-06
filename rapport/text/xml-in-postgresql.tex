@@ -21,7 +21,7 @@ Når XML dokumentet er indlæst i tabellen downloadedXML, så skal der som det førs
 
 \begin{figure}[h]
 \centering
-\begin{BVerbatim}
+\begin{lstlisting}[style=SQL]
   labels := (SELECT xpath('//ProgramSerie/Labels/string/text()', 
              downloadedXML.documentContent) FROM downloadedXML);
   FOR i IN array_lower(labels, 1) .. array_upper(labels, 1)
@@ -31,7 +31,7 @@ Når XML dokumentet er indlæst i tabellen downloadedXML, så skal der som det førs
       INSERT INTO label(labelTxt) VALUES(labels[i]);
     END IF;
   END LOOP;
-\end{BVerbatim}
+\end{lstlisting}
 \caption{Udsnit af funktionen getAndInsertAllLabels()}
 \label{code: getAndInsertAllLabels }
 \end{figure}
@@ -42,7 +42,7 @@ For at identificere alle programserier, så er funktionen ”getAndInsertAllSlugs()
 
 \begin{figure}[h]
 \centering
-\begin{BVerbatim}
+\begin{lstlisting}[style=SQL]
 CREATE OR REPLACE FUNCTION getAndInsertSlugsDetail(p_slug VARCHAR) RETURNS VARCHAR AS $$
 << outerblock >>
 DECLARE
@@ -95,7 +95,7 @@ BEGIN
   RETURN v_title;
 END;
 $$ LANGUAGE plpgsql;
-\end{BVerbatim}
+\end{lstlisting}
 \caption{Funktionen getAndInsertSlugsDetail()}
 \label{code:getAndInsertSlugsDetail}
 \end{figure}
@@ -153,7 +153,7 @@ En yderlige funktion figur \ref{code:programseriesByPublishInterval} blev implem
 
 \begin{figure}[h!]
 \centering
-\begin{BVerbatim}
+\begin{lstlisting}[style=SQL]
 CREATE FUNCTION programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) returns SETOF xml
 AS $$
 DECLARE
@@ -180,7 +180,7 @@ END;
 $$
 LANGUAGE plpgsql;
 
-\end{BVerbatim}
+\end{lstlisting}
 \caption{Funktionen for at finde programserier i et specifik interval}
 \label{code:programseriesByPublishInterval}
 \end{figure}
