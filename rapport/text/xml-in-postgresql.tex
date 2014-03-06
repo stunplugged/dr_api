@@ -102,18 +102,88 @@ $$ LANGUAGE plpgsql;
 
 \section{Funktionen til at finde programserier med specifik label}
 
-Til videoapplikationen skal der som tidligere nævnt bruges en funktion, som kan give et resultatsæt af at programserier inden for en given kategori, altså med en specifik label. Til det formål er funktionen ”programseriesOfLabel()” implementeret som tager kategori navnet som argument. Den efterspurgte information er fordelt på tre tabeller i PostgreSQL databasen og er: label, sluglabel og programserie.  
+Til videoapplikationen skal der som tidligere nævnt bruges en funktion, som kan give et resultatsæt af at programserier inden for en given kategori, altså med en specifik label. Til det formål er funktionen ”programseriesOfLabel()” implementeret som tager kategori navnet som argument og er vist i figur \ref{code:programseriesOfLabel}. Den efterspurgte information er fordelt på tre tabeller i PostgreSQL databasen og er: label, sluglabel og programserie.  
 I denne funktion blev der anvend en cross join imellem de tre tabeller med efterfølgende WHERE kondition for at finde alle programserie igennem deres programserieno som er registreret i tabellen sluglabel på den efterspurgte label. Resultatet skal returneres XML formateret og skal kun vise nogle attributer af programserie. De inbygged PostgreSQL funktioner XMLRoot(), XMLAgg() og XMLElement() blev brugt og genererer en velformet XML dokument med rødeelement \ele{programseries} som indeholder de fundet elementer af \ele{programserie}. XML dokumentet mangler et DTD eller XML skema og den tilhørende prolog for at blive en valid XML dokument.
+
+\begin{figure}[h!]
+\centering
+\begin{lstlisting}[style=SQL]
+
+CREATE FUNCTION programseriesOfLabel(labelName character(50) ) returns SETOF xml
+AS $$
+DECLARE
+
+BEGIN
+  
+RETURN QUERY 
+  SELECT XMLRoot(
+    (SELECT XMLElement( name "programseries",
+    XMLAgg( XMLElement( name "programserie",
+        XMLElement( name "slug", ps.slug),
+        XMLElement( name "titel", ps.title),
+        XMLElement( name "description", ps.description),
+        XMLElement( name "newestvideoid", ps.newestvideoid),
+        XMLElement( name "newestvideopublishtime", ps.newestvideopublishtime)
+        ) 
+      )
+    )
+    
+  FROM   programserie ps, sluglabel sla, label la
+  WHERE  la.labeltxt = labelName
+  AND    sla.labelno = la.labelno
+  AND    sla.programserieno = ps.programserieno
+  ), VERSION '1.0', STANDALONE yes
+  );
+  
+END;
+$$
+LANGUAGE plpgsql;
+
+\end{lstlisting}
+\caption{Funktionen for at finde programserier registreret under en specifik kategori}
+\label{code:programseriesOfLabel}
+\end{figure}
 
 
 
 \section{Funktionen til at finde programserier i et tidsinterval}
 
-En yderlige funktion blev implementeret som gør det muligt at søge efter programserier som blev offentliggørd i et specifik tidsinterval. Ingen skal der returneres nogle attributer af de fundet programserier men denne gang sorteret med de nyste programserier først. En ORDER BY kommando sorterer de fundet programserier med hensyn til attributet newestvideopublishtime inden de bliver udgivet pakket ind i XML. Den aggregationsfunktion XMLAgg() og den ORDER BY i kerne forespørgsel resulterer i en yderlige SELECT statement og dermed dybere nested SQL funktion. Med hjælp af funktionen XMLRoot() returneres t velformet XML dokument. 
+En yderlige funktion figur \ref{code:programseriesByPublishInterval} blev implementeret som gør det muligt at søge efter programserier som blev offentliggørd i et specifik tidsinterval. Ingen skal der returneres nogle attributer af de fundet programserier men denne gang sorteret med de nyste programserier først. En ORDER BY kommando sorterer de fundet programserier med hensyn til attributet newestvideopublishtime inden de bliver udgivet pakket ind i XML. Den aggregationsfunktion XMLAgg() og den ORDER BY i kerne forespørgsel resulterer i en yderlige SELECT statement og dermed dybere nested SQL funktion. Med hjælp af funktionen XMLRoot() returneres t velformet XML dokument. 
 
 
+\begin{figure}[h!]
+\centering
+\begin{BVerbatim}
+CREATE FUNCTION programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) returns SETOF xml
+AS $$
+DECLARE
 
+BEGIN
+  RETURN QUERY SELECT XMLRoot(
+  (SELECT XMLElement( name "programseries",
+  XMLAgg( XMLElement( name "programserie",
+        XMLElement( name "slug", sortedPS.slug),
+        XMLElement( name "titel", sortedPS.title),
+        XMLElement( name "description", sortedPS.description),
+        XMLElement( name "newestvideoid", sortedPS.newestvideoid),
+        XMLElement( name "newestvideopublishtime", sortedPS.newestvideopublishtime)
+      )
+  ))
+  FROM 
+  (
+    SELECT *
+    FROM programserie AS ps
+    WHERE ps.newestvideopublishtime >= startTime AND  ps.newestvideopublishtime  <= stopTime
+    ORDER BY ps.newestvideopublishtime DESC
+  ) AS sortedPS), VERSION '1.0', STANDALONE yes); 
+END;
+$$
+LANGUAGE plpgsql;
 
+\end{BVerbatim}
+\caption{Funktionen for at finde programserier i et specifik interval}
+\label{code:programseriesByPublishInterval}
+\end{figure}
 
 
 
