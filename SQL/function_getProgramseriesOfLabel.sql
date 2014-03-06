@@ -1,11 +1,10 @@
-﻿DROP FUNCTION IF EXISTS fct_programseriesOfLabel(character(50)) CASCADE;
+﻿DROP FUNCTION IF EXISTS programseriesOfLabel(character(50)) CASCADE;
 
-CREATE FUNCTION fct_programseriesOfLabel(labelName character(50) ) returns SETOF xml --programserie
+CREATE FUNCTION programseriesOfLabel(labelName character(50) ) returns SETOF xml
 AS $$
 DECLARE
 
 BEGIN
-	--RETURN QUERY SELECT *
 	
 RETURN QUERY 
 	SELECT XMLRoot(
@@ -33,4 +32,4 @@ LANGUAGE plpgsql;
 
 
 --SELECT *
---FROM fct_programseriesOfLabel('kultur');
+--FROM programseriesOfLabel('kultur');

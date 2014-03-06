@@ -1,6 +1,6 @@
-﻿DROP FUNCTION IF EXISTS fct_programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) CASCADE;
+﻿DROP FUNCTION IF EXISTS programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) CASCADE;
 
-CREATE FUNCTION fct_programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) returns SETOF xml --programserie
+CREATE FUNCTION programseriesByPublishInterval(startTime timestamp, stopTime timestamp ) returns SETOF xml
 AS $$
 DECLARE
 
@@ -28,4 +28,4 @@ LANGUAGE plpgsql;
 
 
 --SELECT *
---FROM fct_programseriesByPublishInterval('2013-12-30 01:00:00', '2014-04-28 01:00:00');
+--FROM programseriesByPublishInterval('2013-12-30 01:00:00', '2014-04-28 01:00:00');
