@@ -52,3 +52,37 @@ Opret en ny database i BaseX med \textit{Database - New} kommando for hver fil, 
 	\label{inst:BaseXIndex}
 \end{figure}
 
+
+\subsection{PostgreSQL konfiguration}
+
+\begin{enumerate}
+
+    \item Opret en ny database, eksempelvis: dr\_api
+	\begin{verbatim}
+	CREATE DATABASE dr_api;
+	\end{verbatim}
+
+	\item Kør skriptet som opretter alle tabeller.
+	\begin{verbatim}
+	create_tables.sql
+	\end{verbatim}
+
+	\item Kør skriptet for at kopierer XML indhold i databasen.
+	\begin{verbatim}
+	insert-XMLinto-downloadedXML.sql
+	\end{verbatim}	
+
+	\item Kør skriptet for at installere alle funktioner.
+	\begin{verbatim}
+	functions.sql
+	\end{verbatim}	
+
+	\item Kør skriptet for at opdatere forskellige tabeller.
+	\begin{verbatim}
+	CREATE_ALL_DATA.sql
+	\end{verbatim}	
+
+
+\end{enumerate}
+
+
