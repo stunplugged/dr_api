@@ -4,6 +4,7 @@ CREATE OR REPLACE FUNCTION getAndInsertAllSlugs() RETURNS VARCHAR AS $$
 << outerblock >>
 DECLARE
     slugs	text[];
+	dummy   VARCHAR;
     count	integer default 0;
 BEGIN
 
@@ -11,10 +12,11 @@ BEGIN
 
   FOR i IN array_lower(slugs, 1) .. array_upper(slugs, 1)
   LOOP
+    dummy := getAndInsertSlugsDetail(slugs[i]);
     count := count + 1;
   END LOOP;
 
-  return count || ' slugs found in XML document';
+  return count || ' programseries found in XML document';
 
 END;
 $$ LANGUAGE plpgsql;
