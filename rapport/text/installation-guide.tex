@@ -23,11 +23,11 @@
 \subsubsection{XQuery og XPath forespørgsler}
 
 \begin{itemize}
-\item \textbf{dr\_api\_module.xqm} XQuery modul med de meste af forespørgsler
-\item \textbf{dr\_api\_module\_usage.xq} Eksempel som viser hvordan modulen dr\_api\_module.xqm bruges.
+\item \textbf{dr\_api\_module.xqm} XQuery modul med de fleste forespørgsler
+\item \textbf{dr\_api\_module\_usage.xq} Eksempel som viser hvordan modulet dr\_api\_module.xqm bruges.
 \item \textbf{word\_cloud\_search.xq} Forespørgsel til ord sky funktionen.
-\item \textbf{text\_search-Restaurant-laks.xq} Full text søgning in programserie.
-\item \textbf{ful-text-search-SCORE-Restaurant-laks.xq} Full text søgning in programserie med score information.
+\item \textbf{text\_search-Restaurant-laks.xq} Full-text søgning i programserie.
+\item \textbf{ful-text-search-SCORE-Restaurant-laks.xq} Full-text søgning i programserie med score information.
 
 \end{itemize}
 
@@ -35,7 +35,7 @@
 \subsubsection{Supplerende filer}
 
 \begin{itemize}
-\item{stop-words.txt} List med brugte stop ord til full text søgning.
+\item{stop-words.txt} List med brugte stop ord til full-text søgning.
 \end{itemize}
 
 
@@ -43,7 +43,7 @@
 \subsection{BaseX konfiguration}
 I projektet blev brugt BaseX 7.8.1.
 
-Opret en ny database i BaseX med \textit{Database - New} kommando for hver fil, programseries.xml, programseries\_new.xml, all.xml og all\_new.xml. Det er vigtigt at i den \textit{Create Database} menu under \textit{Indexes} den Full-Text Index blev aktiveret, sprog dansk og stop-word.txt filen bliver valgt som vist på figur \ref{inst:BaseXIndex}.
+Opret en ny database i BaseX med \textit{Database - New} kommando for hver af filerne, programseries.xml, programseries\_new.xml, all.xml og all\_new.xml. Det er vigtigt at vælge \textit{Indexes} i menuen \textit{Create Database}, hvis Full-Text index skal aktiveres. Sprog sættes til dansk og stop-word.txt filen bliver valgt som vist på figur \ref{inst:BaseXIndex}.
 
 \begin{figure}[h!]
   \centering
@@ -67,7 +67,7 @@ Opret en ny database i BaseX med \textit{Database - New} kommando for hver fil, 
 	create_tables.sql
 	\end{verbatim}
 
-	\item Kør skriptet for at kopierer XML indhold i databasen.
+	\item Kør skriptet for at kopierer XML indhold ind i databasen.
 	\begin{verbatim}
 	insert-XMLinto-downloadedXML.sql
 	\end{verbatim}	
@@ -77,7 +77,7 @@ Opret en ny database i BaseX med \textit{Database - New} kommando for hver fil, 
 	functions.sql
 	\end{verbatim}	
 
-	\item Kør skriptet for at opdatere forskellige tabeller.
+	\item Kør skriptet for at opdatere de forskellige tabeller.
 	\begin{verbatim}
 	CREATE_ALL_DATA.sql
 	\end{verbatim}	
